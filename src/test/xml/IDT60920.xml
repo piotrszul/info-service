@@ -1,0 +1,1632 @@
+<?xml version="1.0"?>
+<product xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="v1.5.1" xsi:noNamespaceSchemaLocation="http://www.bom.gov.au/schema/v1.5/product.xsd">
+  <amoc>
+    <source>
+      <sender>Australian Government Bureau of Meteorology</sender>
+      <region>Tasmania</region>
+      <office>TASRO</office>
+      <copyright>http://www.bom.gov.au/other/copyright.shtml</copyright>
+      <disclaimer>http://www.bom.gov.au/other/disclaimer.shtml</disclaimer>
+    </source>
+    <identifier>IDT60920</identifier>
+    <issue-time-utc>2017-05-26T00:41:02+00:00</issue-time-utc>
+    <issue-time-local tz="EST">2017-05-26T10:41:02+10:00</issue-time-local>
+    <sent-time>2017-05-26T00:41:56+00:00</sent-time>
+    <status>O</status>
+    <service>WSP</service>
+    <product-type>O</product-type>
+    <phase>NEW</phase>
+  </amoc>
+  <observations>
+    <station wmo-id="94970" bom-id="094029" tz="Australia/Hobart" stn-name="HOBART (ELLERSLIE ROAD)" stn-height="50.50" type="AWS" lat="-42.8897" lon="147.3278" forecast-district-id="TAS_PW006" description="Hobart">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="TMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.3</element>
+          <element units="Celsius" type="delta_t">4.0</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">12.4</element>
+          <element units="Celsius" type="dew_point">3.4</element>
+          <element units="hPa" type="pres">1017.9</element>
+          <element units="hPa" type="qnh_pres">1017.9</element>
+          <element units="%" type="rel-humidity">54</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">304</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:24:00+00:00" time-local="2017-05-26T10:24:00+10:00">13.5</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:59:00+00:00" time-local="2017-05-26T06:59:00+10:00">8.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T22:18:00+00:00" time-local="2017-05-26T08:18:00+10:00">17</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T22:18:00+00:00" time-local="2017-05-26T08:18:00+10:00">32</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T22:18:00+00:00" time-local="2017-05-26T08:18:00+10:00">NW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94953" bom-id="091292" tz="Australia/Hobart" stn-name="SMITHTON AERODROME" stn-height="7.50" type="AWS" lat="-40.8347" lon="145.0847" forecast-district-id="TAS_PW010" description="Smithton">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">10.5</element>
+          <element units="Celsius" type="delta_t">0.3</element>
+          <element units="km/h" type="gust_kmh">11</element>
+          <element units="knots" type="wind_gust_spd">6</element>
+          <element units="Celsius" type="air_temperature">11.8</element>
+          <element units="Celsius" type="dew_point">11.3</element>
+          <element units="hPa" type="pres">1021.1</element>
+          <element units="hPa" type="qnh_pres">1021.1</element>
+          <element units="%" type="rel-humidity">97</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">274</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">4.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">12.1</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:22:00+00:00" time-local="2017-05-26T06:22:00+10:00">1.8</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:16:00+00:00" time-local="2017-05-26T01:16:00+10:00">9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:16:00+00:00" time-local="2017-05-26T01:16:00+10:00">17</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:16:00+00:00" time-local="2017-05-26T01:16:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94987" bom-id="092114" tz="Australia/Hobart" stn-name="FRIENDLY BEACHES" stn-height="55.00" type="AWS" lat="-41.9953" lon="148.2794" forecast-district-id="TAS_PW003" description="Friendly Beaches">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">11.5</element>
+          <element units="Celsius" type="delta_t">3.1</element>
+          <element units="km/h" type="gust_kmh">9</element>
+          <element units="knots" type="wind_gust_spd">5</element>
+          <element units="Celsius" type="air_temperature">13.4</element>
+          <element units="Celsius" type="dew_point">6.9</element>
+          <element units="%" type="rel-humidity">65</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">278</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:35:00+00:00" time-local="2017-05-26T10:35:00+10:00">13.7</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T19:47:00+00:00" time-local="2017-05-26T05:47:00+10:00">7.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T21:06:00+00:00" time-local="2017-05-26T07:06:00+10:00">12</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T21:06:00+00:00" time-local="2017-05-26T07:06:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T21:06:00+00:00" time-local="2017-05-26T07:06:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95988" bom-id="092124" tz="Australia/Hobart" stn-name="MARIA ISLAND (POINT LESUEUR)" stn-height="28.00" type="AWS" lat="-42.6621" lon="148.0179" forecast-district-id="TAS_PW003" description="Maria Island">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.6</element>
+          <element units="Celsius" type="delta_t">3.3</element>
+          <element units="km/h" type="gust_kmh">13</element>
+          <element units="knots" type="wind_gust_spd">7</element>
+          <element units="Celsius" type="air_temperature">12.2</element>
+          <element units="Celsius" type="dew_point">4.9</element>
+          <element units="%" type="rel-humidity">61</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">316</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">12.2</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:35:00+00:00" time-local="2017-05-26T07:35:00+10:00">9.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T17:18:00+00:00" time-local="2017-05-26T03:18:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T17:18:00+00:00" time-local="2017-05-26T03:18:00+10:00">41</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T17:18:00+00:00" time-local="2017-05-26T03:18:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95986" bom-id="094155" tz="Australia/Hobart" stn-name="TASMAN ISLAND" stn-height="240.00" type="AWS" lat="-43.2397" lon="148.0025" forecast-district-id="TAS_PW006" description="Tasman Island">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.9</element>
+          <element units="Celsius" type="delta_t">3.0</element>
+          <element units="km/h" type="gust_kmh">19</element>
+          <element units="knots" type="wind_gust_spd">10</element>
+          <element units="Celsius" type="air_temperature">10.9</element>
+          <element units="Celsius" type="dew_point">4.3</element>
+          <element units="%" type="rel-humidity">64</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">326</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">11.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:54:00+00:00" time-local="2017-05-26T06:54:00+10:00">8.4</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:15:00+00:00" time-local="2017-05-26T01:15:00+10:00">24</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:15:00+00:00" time-local="2017-05-26T01:15:00+10:00">44</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:15:00+00:00" time-local="2017-05-26T01:15:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95987" bom-id="092133" tz="UTC" stn-name="SPRING BAY NTC AWS" stn-height="0.00" type="AWS" lat="-42.5464" lon="147.9308" forecast-district-id="TAS_MW005" description="Spring Bay">
+      <period index="0" time-utc="2017-05-26T00:30:00+00:00" time-local="2017-05-26T00:30:00+00:00">
+        <level index="0" type="surface">
+          <element units="Celsius" type="air_temperature">13.8</element>
+          <element units="hPa" type="pres">1018.3</element>
+          <element units="hPa" type="msl_pres">1018.3</element>
+          <element units="hPa" type="qnh_pres">1018.3</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94981" bom-id="092148" tz="Australia/Hobart" stn-name="SWANSEA (FRANCIS STREET)" stn-height="19.00" type="Non-AWS" lat="-42.1381" lon="148.0736" forecast-district-id="TAS_PW003" description="Swansea">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.3</element>
+          <element type="cloud">Partly cloudy</element>
+          <element type="cloud_oktas">3</element>
+          <element type="cloud_type_id">30</element>
+          <element units="Celsius" type="delta_t">2.0</element>
+          <element units="Celsius" type="air_temperature">10.2</element>
+          <element units="Celsius" type="dew_point">5.9</element>
+          <element units="hPa" type="pres">1018.3</element>
+          <element units="hPa" type="msl_pres">1018.3</element>
+          <element units="%" type="rel-humidity">74</element>
+          <element units="km" type="vis_km">30</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">CALM</element>
+          <element units="deg" type="wind_dir_deg">0</element>
+          <element units="km/h" type="wind_spd_kmh">0</element>
+          <element units="knots" type="wind_spd">0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94967" bom-id="094010" tz="Australia/Hobart" stn-name="CAPE BRUNY LIGHTHOUSE" stn-height="55.00" type="Non-AWS" lat="-43.4892" lon="147.1453" forecast-district-id="TAS_PW006" description="Cape Bruny">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">5.8</element>
+          <element type="cloud">Partly cloudy</element>
+          <element type="cloud_oktas">3</element>
+          <element units="Celsius" type="delta_t">2.4</element>
+          <element units="Celsius" type="air_temperature">10.5</element>
+          <element units="Celsius" type="dew_point">5.3</element>
+          <element units="%" type="rel-humidity">70</element>
+          <element units="m" type="sea_height">1</element>
+          <element type="swell_dir">SW</element>
+          <element units="m" type="swell_height">1.0</element>
+          <element units="s" type="swell_period">12</element>
+          <element units="km" type="vis_km">27</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">310</element>
+          <element units="km/h" type="wind_spd_kmh">19</element>
+          <element units="knots" type="wind_spd">10</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">1.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95967" bom-id="094198" tz="Australia/Hobart" stn-name="CAPE BRUNY (CAPE BRUNY)" stn-height="59.70" type="AWS" lat="-43.4886" lon="147.1444" forecast-district-id="TAS_PW006" description="Cape Bruny AWS">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">4.7</element>
+          <element units="Celsius" type="delta_t">3.1</element>
+          <element units="km/h" type="gust_kmh">35</element>
+          <element units="knots" type="wind_gust_spd">19</element>
+          <element units="Celsius" type="air_temperature">11.6</element>
+          <element units="Celsius" type="dew_point">4.8</element>
+          <element units="hPa" type="pres">1017.1</element>
+          <element units="hPa" type="qnh_pres">1017.1</element>
+          <element units="%" type="rel-humidity">63</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">306</element>
+          <element units="km/h" type="wind_spd_kmh">30</element>
+          <element units="knots" type="wind_spd">16</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:12:00+00:00" time-local="2017-05-26T10:12:00+10:00">12.1</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:47:00+00:00" time-local="2017-05-26T07:47:00+10:00">9.6</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">41</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95961" bom-id="097080" tz="Australia/Hobart" stn-name="LOW ROCKY POINT" stn-height="34.00" type="AWS" lat="-42.9831" lon="145.5025" forecast-district-id="TAS_PW009" description="Low Rocky Point">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">3.5</element>
+          <element units="Celsius" type="delta_t">1.8</element>
+          <element units="km/h" type="gust_kmh">41</element>
+          <element units="knots" type="wind_gust_spd">22</element>
+          <element units="Celsius" type="air_temperature">11.1</element>
+          <element units="Celsius" type="dew_point">7.4</element>
+          <element units="hPa" type="pres">1018.6</element>
+          <element units="hPa" type="qnh_pres">1018.6</element>
+          <element units="%" type="rel-humidity">78</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">283</element>
+          <element units="km/h" type="wind_spd_kmh">37</element>
+          <element units="knots" type="wind_spd">20</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:18:00+00:00" time-local="2017-05-26T10:18:00+10:00">12.9</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T17:07:00+00:00" time-local="2017-05-26T03:07:00+10:00">10.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:56:00+00:00" time-local="2017-05-26T01:56:00+10:00">34</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:56:00+00:00" time-local="2017-05-26T01:56:00+10:00">63</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:56:00+00:00" time-local="2017-05-26T01:56:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94962" bom-id="094041" tz="Australia/Hobart" stn-name="MAATSUYKER ISLAND LIGHTHOUSE" stn-height="146.50" type="AWS" lat="-43.6578" lon="146.2711" forecast-district-id="TAS_PW009" description="Maatsuyker Island">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-0.5</element>
+          <element units="Celsius" type="delta_t">2.6</element>
+          <element units="km/h" type="gust_kmh">61</element>
+          <element units="knots" type="wind_gust_spd">33</element>
+          <element units="Celsius" type="air_temperature">11.3</element>
+          <element units="Celsius" type="dew_point">5.7</element>
+          <element units="hPa" type="pres">1016.2</element>
+          <element units="hPa" type="qnh_pres">1016.2</element>
+          <element units="%" type="rel-humidity">68</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">319</element>
+          <element units="km/h" type="wind_spd_kmh">57</element>
+          <element units="knots" type="wind_spd">31</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">4.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:39:00+00:00" time-local="2017-05-26T10:39:00+10:00">11.6</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T10:56:00+00:00" time-local="2017-05-25T20:56:00+10:00">9.2</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T16:58:00+00:00" time-local="2017-05-26T02:58:00+10:00">47</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T16:58:00+00:00" time-local="2017-05-26T02:58:00+10:00">87</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T16:58:00+00:00" time-local="2017-05-26T02:58:00+10:00">NW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94974" bom-id="097000" tz="Australia/Hobart" stn-name="CAPE SORELL" stn-height="19.30" type="AWS" lat="-42.1986" lon="145.1700" forecast-district-id="TAS_PW009" description="Cape Sorell">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.1</element>
+          <element units="Celsius" type="delta_t">2.7</element>
+          <element units="km/h" type="gust_kmh">24</element>
+          <element units="knots" type="wind_gust_spd">13</element>
+          <element units="Celsius" type="air_temperature">13.4</element>
+          <element units="Celsius" type="dew_point">8.0</element>
+          <element units="%" type="rel-humidity">70</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">303</element>
+          <element units="km/h" type="wind_spd_kmh">20</element>
+          <element units="knots" type="wind_spd">11</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">14.3</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:53:00+00:00" time-local="2017-05-26T06:53:00+10:00">10.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T20:40:00+00:00" time-local="2017-05-26T06:40:00+10:00">24</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T20:40:00+00:00" time-local="2017-05-26T06:40:00+10:00">44</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T20:40:00+00:00" time-local="2017-05-26T06:40:00+10:00">SW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94956" bom-id="097072" tz="Australia/Hobart" stn-name="STRAHAN AERODROME" stn-height="21.00" type="AWS" lat="-42.1550" lon="145.2908" forecast-district-id="TAS_PW009" description="Strahan">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.4</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">1</element>
+          <element units="Celsius" type="delta_t">1.3</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">11.7</element>
+          <element units="Celsius" type="dew_point">9.1</element>
+          <element units="hPa" type="pres">1020.0</element>
+          <element units="hPa" type="qnh_pres">1020.0</element>
+          <element units="%" type="rel-humidity">84</element>
+          <element units="km" type="vis_km">11</element>
+          <element type="wind_dir">NNE</element>
+          <element units="deg" type="wind_dir_deg">12</element>
+          <element units="km/h" type="wind_spd_kmh">11</element>
+          <element units="knots" type="wind_spd">6</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">6.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-25T23:37:00+00:00" time-local="2017-05-26T09:37:00+10:00">12.4</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T22:25:00+00:00" time-local="2017-05-26T08:25:00+10:00">8.8</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T17:13:00+00:00" time-local="2017-05-26T03:13:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T17:13:00+00:00" time-local="2017-05-26T03:13:00+10:00">41</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T17:13:00+00:00" time-local="2017-05-26T03:13:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95985" bom-id="092123" tz="Australia/Hobart" stn-name="SWAN ISLAND" stn-height="15.00" type="AWS" lat="-40.7292" lon="148.1250" forecast-district-id="TAS_PW002" description="Swan Island">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.0</element>
+          <element units="Celsius" type="delta_t">2.7</element>
+          <element units="km/h" type="gust_kmh">32</element>
+          <element units="knots" type="wind_gust_spd">17</element>
+          <element units="Celsius" type="air_temperature">12.8</element>
+          <element units="Celsius" type="dew_point">7.2</element>
+          <element units="%" type="rel-humidity">69</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">247</element>
+          <element units="km/h" type="wind_spd_kmh">22</element>
+          <element units="knots" type="wind_spd">12</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:26:00+00:00" time-local="2017-05-26T10:26:00+10:00">13.2</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:15:00+00:00" time-local="2017-05-26T07:15:00+10:00">10.4</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:27:00+00:00" time-local="2017-05-26T01:27:00+10:00">24</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:27:00+00:00" time-local="2017-05-26T01:27:00+10:00">44</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:27:00+00:00" time-local="2017-05-26T01:27:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94975" bom-id="094008" tz="Australia/Hobart" stn-name="HOBART AIRPORT" stn-height="4.00" type="AWS" lat="-42.8339" lon="147.5033" forecast-district-id="TAS_PW006" description="Hobart Airport">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="TMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.3</element>
+          <element units="Celsius" type="delta_t">4.4</element>
+          <element units="km/h" type="gust_kmh">30</element>
+          <element units="knots" type="wind_gust_spd">16</element>
+          <element units="Celsius" type="air_temperature">13.0</element>
+          <element units="Celsius" type="dew_point">3.1</element>
+          <element units="hPa" type="pres">1018.4</element>
+          <element units="hPa" type="qnh_pres">1018.4</element>
+          <element units="%" type="rel-humidity">51</element>
+          <element units="km" type="vis_km">45</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">319</element>
+          <element units="km/h" type="wind_spd_kmh">22</element>
+          <element units="knots" type="wind_spd">12</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">13.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T19:02:00+00:00" time-local="2017-05-26T05:02:00+10:00">7.7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:44:00+00:00" time-local="2017-05-26T00:44:00+10:00">18</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:44:00+00:00" time-local="2017-05-26T00:44:00+10:00">33</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:44:00+00:00" time-local="2017-05-26T00:44:00+10:00">NW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95973" bom-id="091284" tz="Australia/Hobart" stn-name="BRIDPORT (SEA VIEW VILLAS)" stn-height="52.00" type="Non-AWS" lat="-41.0025" lon="147.3869" forecast-district-id="TAS_PW002" description="Bridport">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.3</element>
+          <element type="cloud">Clear</element>
+          <element units="m" type="cloud_base_m">2500</element>
+          <element type="cloud_oktas">0</element>
+          <element units="Celsius" type="delta_t">1.6</element>
+          <element units="Celsius" type="air_temperature">9.1</element>
+          <element units="Celsius" type="dew_point">5.6</element>
+          <element units="%" type="rel-humidity">79</element>
+          <element units="km" type="vis_km">40</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">S</element>
+          <element units="deg" type="wind_dir_deg">180</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">4.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">4.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95972" bom-id="094212" tz="Australia/Hobart" stn-name="CAMPANIA (KINCORA)" stn-height="45.00" type="AWS" lat="-42.6867" lon="147.4258" forecast-district-id="TAS_PW006" description="Campania">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.4</element>
+          <element units="Celsius" type="delta_t">3.6</element>
+          <element units="km/h" type="gust_kmh">24</element>
+          <element units="knots" type="wind_gust_spd">13</element>
+          <element units="Celsius" type="air_temperature">12.4</element>
+          <element units="Celsius" type="dew_point">4.4</element>
+          <element units="%" type="rel-humidity">58</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">285</element>
+          <element units="km/h" type="wind_spd_kmh">20</element>
+          <element units="knots" type="wind_spd">11</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">12.5</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:47:00+00:00" time-local="2017-05-26T07:47:00+10:00">4.0</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:34:00+00:00" time-local="2017-05-26T10:34:00+10:00">17</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:34:00+00:00" time-local="2017-05-26T10:34:00+10:00">32</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:34:00+00:00" time-local="2017-05-26T10:34:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94961" bom-id="094020" tz="Australia/Hobart" stn-name="DOVER" stn-height="20.00" type="Non-AWS" lat="-43.3330" lon="146.9980" forecast-district-id="TAS_PW006" description="Dover">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">6.7</element>
+          <element type="cloud">Mostly clear</element>
+          <element units="m" type="cloud_base_m">0</element>
+          <element type="cloud_oktas">2</element>
+          <element type="cloud_type_id">35</element>
+          <element units="Celsius" type="delta_t">0.2</element>
+          <element units="Celsius" type="air_temperature">8.5</element>
+          <element units="Celsius" type="dew_point">8.1</element>
+          <element units="%" type="rel-humidity">97</element>
+          <element units="km" type="vis_km">30</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">310</element>
+          <element units="km/h" type="wind_spd_kmh">7</element>
+          <element units="knots" type="wind_spd">4</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">2.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94980" bom-id="099005" tz="Australia/Hobart" stn-name="FLINDERS ISLAND AIRPORT" stn-height="9.00" type="AWS" lat="-40.0911" lon="148.0024" forecast-district-id="TAS_PW001" description="Flinders Island Airport">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">6.1</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">2</element>
+          <element units="Celsius" type="delta_t">3.4</element>
+          <element units="km/h" type="gust_kmh">39</element>
+          <element units="knots" type="wind_gust_spd">21</element>
+          <element units="Celsius" type="air_temperature">13.6</element>
+          <element units="Celsius" type="dew_point">6.5</element>
+          <element units="hPa" type="pres">1020.4</element>
+          <element units="hPa" type="qnh_pres">1020.4</element>
+          <element units="%" type="rel-humidity">62</element>
+          <element units="km" type="vis_km">22</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">250</element>
+          <element units="km/h" type="wind_spd_kmh">35</element>
+          <element units="knots" type="wind_spd">19</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:37:00+00:00" time-local="2017-05-26T10:37:00+10:00">14.4</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:43:00+00:00" time-local="2017-05-26T06:43:00+10:00">12.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T19:34:00+00:00" time-local="2017-05-26T05:34:00+10:00">27</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T19:34:00+00:00" time-local="2017-05-26T05:34:00+10:00">50</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T19:34:00+00:00" time-local="2017-05-26T05:34:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95959" bom-id="096033" tz="Australia/Hobart" stn-name="LIAWENEE" stn-height="1057.00" type="AWS" lat="-41.8997" lon="146.6694" forecast-district-id="TAS_PW008" description="Liawenee">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-2.8</element>
+          <element units="Celsius" type="delta_t">0.6</element>
+          <element units="km/h" type="gust_kmh">39</element>
+          <element units="knots" type="wind_gust_spd">21</element>
+          <element units="Celsius" type="air_temperature">4.7</element>
+          <element units="Celsius" type="dew_point">3.4</element>
+          <element units="hPa" type="pres">1017.6</element>
+          <element units="hPa" type="qnh_pres">1017.6</element>
+          <element units="%" type="rel-humidity">91</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">249</element>
+          <element units="km/h" type="wind_spd_kmh">32</element>
+          <element units="knots" type="wind_spd">17</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:35:00+00:00" time-local="2017-05-26T10:35:00+10:00">5.4</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:50:00+00:00" time-local="2017-05-26T07:50:00+10:00">-0.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">26</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">48</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94950" bom-id="091223" tz="Australia/Hobart" stn-name="MARRAWAH" stn-height="107.30" type="Non-AWS" lat="-40.9089" lon="144.7094" forecast-district-id="TAS_FA001" description="Marrawah">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.4</element>
+          <element type="cloud">Mostly cloudy</element>
+          <element units="m" type="cloud_base_m">1000</element>
+          <element type="cloud_oktas">7</element>
+          <element type="cloud_type_id">35</element>
+          <element units="Celsius" type="delta_t">2.2</element>
+          <element units="Celsius" type="air_temperature">11.0</element>
+          <element units="Celsius" type="dew_point">6.3</element>
+          <element units="hPa" type="pres">1020.3</element>
+          <element units="hPa" type="msl_pres">1020.3</element>
+          <element units="%" type="rel-humidity">73</element>
+          <element units="m" type="sea_height">1</element>
+          <element type="swell_dir">SW</element>
+          <element units="m" type="swell_height">1.5</element>
+          <element units="s" type="swell_period">12</element>
+          <element units="km" type="vis_km">50</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">270</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">4.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">4.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95979" bom-id="094087" tz="Australia/Hobart" stn-name="KUNANYI (MOUNT WELLINGTON PINNACLE)" stn-height="1260.47" type="AWS" lat="-42.8950" lon="147.2358" forecast-district-id="TAS_PW006" description="kunanyi /Mount Wellington">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-6.9</element>
+          <element units="Celsius" type="delta_t">0.5</element>
+          <element units="km/h" type="gust_kmh">43</element>
+          <element units="knots" type="wind_gust_spd">23</element>
+          <element units="Celsius" type="air_temperature">1.7</element>
+          <element units="Celsius" type="dew_point">0.5</element>
+          <element units="%" type="rel-humidity">92</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">256</element>
+          <element units="km/h" type="wind_spd_kmh">35</element>
+          <element units="knots" type="wind_spd">19</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:43:00+10:00" duration="103" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:43:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:36:00+00:00" time-local="2017-05-26T10:36:00+10:00">1.8</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T16:50:00+00:00" time-local="2017-05-26T02:50:00+10:00">-0.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T20:56:00+00:00" time-local="2017-05-26T06:56:00+10:00">39</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T20:56:00+00:00" time-local="2017-05-26T06:56:00+10:00">72</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T20:56:00+00:00" time-local="2017-05-26T06:56:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94957" bom-id="095048" tz="Australia/Hobart" stn-name="OUSE FIRE STATION" stn-height="90.00" type="AWS" lat="-42.4842" lon="146.7106" forecast-district-id="TAS_PW007" description="Ouse">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.0</element>
+          <element units="Celsius" type="delta_t">2.6</element>
+          <element units="km/h" type="gust_kmh">20</element>
+          <element units="knots" type="wind_gust_spd">11</element>
+          <element units="Celsius" type="air_temperature">12.0</element>
+          <element units="Celsius" type="dew_point">6.5</element>
+          <element units="hPa" type="pres">1018.9</element>
+          <element units="hPa" type="qnh_pres">1018.9</element>
+          <element units="%" type="rel-humidity">69</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">313</element>
+          <element units="km/h" type="wind_spd_kmh">17</element>
+          <element units="knots" type="wind_spd">9</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">12.2</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:06:00+00:00" time-local="2017-05-26T07:06:00+10:00">5.9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:36:00+00:00" time-local="2017-05-26T10:36:00+10:00">15</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:36:00+00:00" time-local="2017-05-26T10:36:00+10:00">28</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:36:00+00:00" time-local="2017-05-26T10:36:00+10:00">NW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94985" bom-id="093053" tz="Australia/Hobart" stn-name="ROSS (THE BOULEVARDS)" stn-height="186.00" type="Non-AWS" lat="-42.0250" lon="147.4953" forecast-district-id="TAS_PW005" description="Ross">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">4.6</element>
+          <element type="cloud">Partly cloudy</element>
+          <element type="cloud_oktas">4</element>
+          <element units="Celsius" type="delta_t">0.7</element>
+          <element units="Celsius" type="air_temperature">6.8</element>
+          <element units="Celsius" type="dew_point">5.2</element>
+          <element units="%" type="rel-humidity">89</element>
+          <element units="km" type="vis_km">30</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">110</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95964" bom-id="091293" tz="Australia/Hobart" stn-name="LOW HEAD" stn-height="3.00" type="AWS" lat="-41.0547" lon="146.7874" forecast-district-id="TAS_PW004" description="Low Head">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.0</element>
+          <element units="Celsius" type="delta_t">2.4</element>
+          <element units="km/h" type="gust_kmh">30</element>
+          <element units="knots" type="wind_gust_spd">16</element>
+          <element units="Celsius" type="air_temperature">12.8</element>
+          <element units="Celsius" type="dew_point">7.9</element>
+          <element units="hPa" type="pres">1020.2</element>
+          <element units="hPa" type="qnh_pres">1020.2</element>
+          <element units="%" type="rel-humidity">72</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">263</element>
+          <element units="km/h" type="wind_spd_kmh">28</element>
+          <element units="knots" type="wind_spd">15</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:39:00+00:00" time-local="2017-05-26T10:39:00+10:00">13.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:52:00+00:00" time-local="2017-05-26T07:52:00+10:00">10.6</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:48:00+00:00" time-local="2017-05-26T00:48:00+10:00">24</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:48:00+00:00" time-local="2017-05-26T00:48:00+10:00">44</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:48:00+00:00" time-local="2017-05-26T00:48:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94983" bom-id="092045" tz="Australia/Hobart" stn-name="LARAPUNA (EDDYSTONE POINT)" stn-height="19.70" type="AWS" lat="-40.9928" lon="148.3467" forecast-district-id="TAS_PW002" description="Larapuna (Eddystone Point)">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.4</element>
+          <element units="Celsius" type="delta_t">3.4</element>
+          <element units="km/h" type="gust_kmh">20</element>
+          <element units="knots" type="wind_gust_spd">11</element>
+          <element units="Celsius" type="air_temperature">13.5</element>
+          <element units="Celsius" type="dew_point">6.4</element>
+          <element units="hPa" type="pres">1019.3</element>
+          <element units="hPa" type="qnh_pres">1019.3</element>
+          <element units="%" type="rel-humidity">62</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">249</element>
+          <element units="km/h" type="wind_spd_kmh">17</element>
+          <element units="knots" type="wind_spd">9</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">4.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">13.5</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:33:00+00:00" time-local="2017-05-26T07:33:00+10:00">8.3</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T19:01:00+00:00" time-local="2017-05-26T05:01:00+10:00">19</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T19:01:00+00:00" time-local="2017-05-26T05:01:00+10:00">35</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T19:01:00+00:00" time-local="2017-05-26T05:01:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94972" bom-id="091219" tz="Australia/Hobart" stn-name="SCOTTSDALE (WEST MINSTONE ROAD)" stn-height="197.50" type="AWS" lat="-41.1708" lon="147.4883" forecast-district-id="TAS_PW002" description="Scottsdale">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.3</element>
+          <element units="Celsius" type="delta_t">3.5</element>
+          <element units="km/h" type="gust_kmh">11</element>
+          <element units="knots" type="wind_gust_spd">6</element>
+          <element units="Celsius" type="air_temperature">11.4</element>
+          <element units="Celsius" type="dew_point">3.5</element>
+          <element units="hPa" type="pres">1019.3</element>
+          <element units="hPa" type="qnh_pres">1019.3</element>
+          <element units="%" type="rel-humidity">58</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">267</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:26:00+00:00" time-local="2017-05-26T10:26:00+10:00">11.6</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:55:00+00:00" time-local="2017-05-26T06:55:00+10:00">2.7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T16:49:00+00:00" time-local="2017-05-26T02:49:00+10:00">12</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T16:49:00+00:00" time-local="2017-05-26T02:49:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T16:49:00+00:00" time-local="2017-05-26T02:49:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95984" bom-id="092027" tz="Australia/Hobart" stn-name="ORFORD (AUBIN COURT)" stn-height="14.00" type="Non-AWS" lat="-42.5519" lon="147.8753" forecast-district-id="TAS_PW003" description="Orford">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.1</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">2</element>
+          <element units="Celsius" type="delta_t">1.3</element>
+          <element units="Celsius" type="air_temperature">8.8</element>
+          <element units="Celsius" type="dew_point">6.0</element>
+          <element units="%" type="rel-humidity">82</element>
+          <element units="km" type="vis_km">40</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">S</element>
+          <element units="deg" type="wind_dir_deg">180</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">1.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95989" bom-id="092003" tz="Australia/Hobart" stn-name="BICHENO (COUNCIL DEPOT)" stn-height="11.00" type="Non-AWS" lat="-41.8739" lon="148.3036" forecast-district-id="TAS_PW003" description="Bicheno">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.4</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">1</element>
+          <element units="Celsius" type="delta_t">2.5</element>
+          <element units="Celsius" type="air_temperature">9.5</element>
+          <element units="Celsius" type="dew_point">3.8</element>
+          <element units="%" type="rel-humidity">67</element>
+          <element units="km" type="vis_km">30</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">270</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">Trace</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">Trace</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95974" bom-id="092012" tz="Australia/Hobart" stn-name="FINGAL (LEGGE STREET)" stn-height="237.00" type="AWS" lat="-41.6428" lon="147.9664" forecast-district-id="TAS_PW003" description="Fingal">
+      <period index="0" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.7</element>
+          <element units="Celsius" type="delta_t">2.5</element>
+          <element units="km/h" type="gust_kmh">9</element>
+          <element units="knots" type="wind_gust_spd">5</element>
+          <element units="Celsius" type="air_temperature">10.2</element>
+          <element units="Celsius" type="dew_point">4.6</element>
+          <element units="%" type="rel-humidity">68</element>
+          <element units="deg" type="wind_dir_deg">0</element>
+          <element units="km/h" type="wind_spd_kmh">7</element>
+          <element units="knots" type="wind_spd">4</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:38:00+10:00" duration="98" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:38:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">10.4</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:41:00+00:00" time-local="2017-05-26T07:41:00+10:00">1.6</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T20:29:00+00:00" time-local="2017-05-26T06:29:00+10:00">9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T20:29:00+00:00" time-local="2017-05-26T06:29:00+10:00">17</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T20:29:00+00:00" time-local="2017-05-26T06:29:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94979" bom-id="092019" tz="Australia/Hobart" stn-name="LAKE LEAKE (ELIZABETH RIVER)" stn-height="575.00" type="Non-AWS" lat="-42.0067" lon="147.7975" forecast-district-id="TAS_PW003" description="Lake Leake">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">0.1</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">2</element>
+          <element units="Celsius" type="delta_t">0.1</element>
+          <element units="Celsius" type="air_temperature">2.5</element>
+          <element units="Celsius" type="dew_point">2.3</element>
+          <element units="%" type="rel-humidity">99</element>
+          <element units="km" type="vis_km">60</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">300</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">0.8</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.8</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95981" bom-id="092120" tz="Australia/Hobart" stn-name="ST HELENS AERODROME" stn-height="48.00" type="AWS" lat="-41.3381" lon="148.2792" forecast-district-id="TAS_PW003" description="St Helens">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">10.7</element>
+          <element units="Celsius" type="delta_t">3.2</element>
+          <element units="km/h" type="gust_kmh">7</element>
+          <element units="knots" type="wind_gust_spd">4</element>
+          <element units="Celsius" type="air_temperature">12.8</element>
+          <element units="Celsius" type="dew_point">5.9</element>
+          <element units="hPa" type="pres">1019.3</element>
+          <element units="hPa" type="qnh_pres">1019.3</element>
+          <element units="%" type="rel-humidity">63</element>
+          <element units="km" type="vis_km">70</element>
+          <element type="wind_dir">N</element>
+          <element units="deg" type="wind_dir_deg">3</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:39:00+00:00" time-local="2017-05-26T10:39:00+10:00">13.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:23:00+00:00" time-local="2017-05-26T07:23:00+10:00">6.9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T19:00:00+00:00" time-local="2017-05-26T05:00:00+10:00">10</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T19:00:00+00:00" time-local="2017-05-26T05:00:00+10:00">19</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T19:00:00+00:00" time-local="2017-05-26T05:00:00+10:00">N</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94969" bom-id="091237" tz="Australia/Hobart" stn-name="LAUNCESTON (TI TREE BEND)" stn-height="5.00" type="AWS" lat="-41.4194" lon="147.1219" forecast-district-id="TAS_PW004" description="Launceston">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.6</element>
+          <element units="Celsius" type="delta_t">0.3</element>
+          <element units="km/h" type="gust_kmh">2</element>
+          <element units="knots" type="wind_gust_spd">1</element>
+          <element units="Celsius" type="air_temperature">9.3</element>
+          <element units="Celsius" type="dew_point">8.7</element>
+          <element units="%" type="rel-humidity">96</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">305</element>
+          <element units="km/h" type="wind_spd_kmh">2</element>
+          <element units="knots" type="wind_spd">1</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:28:00+00:00" time-local="2017-05-26T10:28:00+10:00">9.7</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:12:00+00:00" time-local="2017-05-26T07:12:00+10:00">2.6</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T16:24:00+00:00" time-local="2017-05-26T02:24:00+10:00">7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T16:24:00+00:00" time-local="2017-05-26T02:24:00+10:00">13</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T16:24:00+00:00" time-local="2017-05-26T02:24:00+10:00">E</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95966" bom-id="091311" tz="Australia/Hobart" stn-name="LAUNCESTON AIRPORT" stn-height="166.90" type="AWS" lat="-41.5492" lon="147.2144" forecast-district-id="TAS_PW004" description="Launceston Airport">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">5.2</element>
+          <element units="Celsius" type="delta_t">1.9</element>
+          <element units="km/h" type="gust_kmh">20</element>
+          <element units="knots" type="wind_gust_spd">11</element>
+          <element units="Celsius" type="air_temperature">9.8</element>
+          <element units="Celsius" type="dew_point">5.6</element>
+          <element units="hPa" type="pres">1019.7</element>
+          <element units="hPa" type="qnh_pres">1019.7</element>
+          <element units="%" type="rel-humidity">75</element>
+          <element units="km" type="vis_km">32</element>
+          <element type="wind_dir">NNW</element>
+          <element units="deg" type="wind_dir_deg">336</element>
+          <element units="km/h" type="wind_spd_kmh">19</element>
+          <element units="knots" type="wind_spd">10</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">10.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:32:00+00:00" time-local="2017-05-26T07:32:00+10:00">1.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">12</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">N</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95969" bom-id="091306" tz="Australia/Hobart" stn-name="CRESSY RESEARCH STATION" stn-height="148.00" type="AWS" lat="-41.7256" lon="147.0794" forecast-district-id="TAS_PW004" description="Cressy">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.5</element>
+          <element units="Celsius" type="delta_t">2.6</element>
+          <element units="km/h" type="gust_kmh">11</element>
+          <element units="knots" type="wind_gust_spd">6</element>
+          <element units="Celsius" type="air_temperature">11.2</element>
+          <element units="Celsius" type="dew_point">5.7</element>
+          <element units="%" type="rel-humidity">69</element>
+          <element type="wind_dir">N</element>
+          <element units="deg" type="wind_dir_deg">352</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">11.6</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:38:00+00:00" time-local="2017-05-26T07:38:00+10:00">3.8</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">41</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94971" bom-id="094201" tz="Australia/Hobart" stn-name="MELTON MOWBRAY (NORTH STOCKMAN)" stn-height="238.00" type="Non-AWS" lat="-42.4928" lon="147.1981" forecast-district-id="TAS_PW005" description="Melton Mowbray">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">5.4</element>
+          <element type="cloud">Partly cloudy</element>
+          <element type="cloud_oktas">3</element>
+          <element units="Celsius" type="delta_t">2.1</element>
+          <element units="Celsius" type="air_temperature">8.5</element>
+          <element units="Celsius" type="dew_point">3.7</element>
+          <element units="%" type="rel-humidity">72</element>
+          <element units="km" type="vis_km">50</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">SW</element>
+          <element units="deg" type="wind_dir_deg">230</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94960" bom-id="094195" tz="Australia/Hobart" stn-name="TUNNACK FIRE STATION" stn-height="461.50" type="AWS" lat="-42.4543" lon="147.4612" forecast-district-id="TAS_PW005" description="Tunnack">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">2.0</element>
+          <element units="Celsius" type="delta_t">2.8</element>
+          <element units="km/h" type="gust_kmh">33</element>
+          <element units="knots" type="wind_gust_spd">18</element>
+          <element units="Celsius" type="air_temperature">9.2</element>
+          <element units="Celsius" type="dew_point">2.8</element>
+          <element units="hPa" type="pres">1018.2</element>
+          <element units="hPa" type="qnh_pres">1018.2</element>
+          <element units="%" type="rel-humidity">64</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">265</element>
+          <element units="km/h" type="wind_spd_kmh">30</element>
+          <element units="knots" type="wind_spd">16</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:37:00+00:00" time-local="2017-05-26T10:37:00+10:00">9.5</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:09:00+00:00" time-local="2017-05-26T07:09:00+10:00">1.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">21</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">39</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95977" bom-id="094220" tz="Australia/Hobart" stn-name="GROVE (RESEARCH STATION)" stn-height="65.00" type="AWS" lat="-42.9858" lon="147.0742" forecast-district-id="TAS_PW006" description="Grove">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.0</element>
+          <element units="Celsius" type="delta_t">3.6</element>
+          <element units="km/h" type="gust_kmh">13</element>
+          <element units="knots" type="wind_gust_spd">7</element>
+          <element units="Celsius" type="air_temperature">12.0</element>
+          <element units="Celsius" type="dew_point">4.0</element>
+          <element units="%" type="rel-humidity">58</element>
+          <element type="wind_dir">S</element>
+          <element units="deg" type="wind_dir_deg">173</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">12.5</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:19:00+00:00" time-local="2017-05-26T07:19:00+10:00">4.4</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:09:00+00:00" time-local="2017-05-26T00:09:00+10:00">14</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:09:00+00:00" time-local="2017-05-26T00:09:00+10:00">26</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:09:00+00:00" time-local="2017-05-26T00:09:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94977" bom-id="094191" tz="Australia/Hobart" stn-name="HARTZ MOUNTAIN (KEOGHS PIMPLE)" stn-height="831.00" type="AWS" lat="-43.2006" lon="146.7683" forecast-district-id="TAS_PW006" description="Hartz Mountains">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-2.6</element>
+          <element units="Celsius" type="delta_t">0.6</element>
+          <element units="km/h" type="gust_kmh">43</element>
+          <element units="knots" type="wind_gust_spd">23</element>
+          <element units="Celsius" type="air_temperature">4.6</element>
+          <element units="Celsius" type="dew_point">3.1</element>
+          <element units="%" type="rel-humidity">90</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">288</element>
+          <element units="km/h" type="wind_spd_kmh">30</element>
+          <element units="knots" type="wind_spd">16</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:33:00+00:00" time-local="2017-05-26T10:33:00+10:00">5.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:49:00+00:00" time-local="2017-05-26T07:49:00+10:00">2.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T17:05:00+00:00" time-local="2017-05-26T03:05:00+10:00">42</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T17:05:00+00:00" time-local="2017-05-26T03:05:00+10:00">78</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T17:05:00+00:00" time-local="2017-05-26T03:05:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94951" bom-id="094254" tz="Australia/Hobart" stn-name="DUNALLEY (STROUD POINT)" stn-height="12.43" type="AWS" lat="-42.9017" lon="147.7894" forecast-district-id="TAS_PW006" description="Dunalley">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">7.4</element>
+          <element units="Celsius" type="delta_t">3.5</element>
+          <element units="km/h" type="gust_kmh">24</element>
+          <element units="knots" type="wind_gust_spd">13</element>
+          <element units="Celsius" type="air_temperature">12.4</element>
+          <element units="Celsius" type="dew_point">4.6</element>
+          <element units="%" type="rel-humidity">59</element>
+          <element type="wind_dir">WNW</element>
+          <element units="deg" type="wind_dir_deg">299</element>
+          <element units="km/h" type="wind_spd_kmh">20</element>
+          <element units="knots" type="wind_spd">11</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:36:00+00:00" time-local="2017-05-26T10:36:00+10:00">12.6</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:52:00+00:00" time-local="2017-05-26T07:52:00+10:00">8.7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:10:00+00:00" time-local="2017-05-26T10:10:00+10:00">18</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:10:00+00:00" time-local="2017-05-26T10:10:00+10:00">33</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:10:00+00:00" time-local="2017-05-26T10:10:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94988" bom-id="094255" tz="Australia/Hobart" stn-name="DENNES POINT" stn-height="5.67" type="AWS" lat="-43.0639" lon="147.3567" forecast-district-id="TAS_PW006" description="Dennes Point">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.2</element>
+          <element units="Celsius" type="delta_t">3.9</element>
+          <element units="km/h" type="gust_kmh">17</element>
+          <element units="knots" type="wind_gust_spd">9</element>
+          <element units="Celsius" type="air_temperature">13.2</element>
+          <element units="Celsius" type="dew_point">4.8</element>
+          <element units="%" type="rel-humidity">56</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">265</element>
+          <element units="km/h" type="wind_spd_kmh">15</element>
+          <element units="knots" type="wind_spd">8</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">13.3</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:03:00+00:00" time-local="2017-05-26T07:03:00+10:00">8.1</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T16:09:00+00:00" time-local="2017-05-26T02:09:00+10:00">20</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T16:09:00+00:00" time-local="2017-05-26T02:09:00+10:00">37</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T16:09:00+00:00" time-local="2017-05-26T02:09:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94964" bom-id="095003" tz="Australia/Hobart" stn-name="BUSHY PARK (BUSHY PARK ESTATES)" stn-height="27.00" type="AWS" lat="-42.7097" lon="146.8983" forecast-district-id="TAS_PW007" description="Bushy Park">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.5</element>
+          <element units="Celsius" type="delta_t">3.4</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">12.9</element>
+          <element units="Celsius" type="dew_point">5.7</element>
+          <element units="%" type="rel-humidity">61</element>
+          <element type="wind_dir">N</element>
+          <element units="deg" type="wind_dir_deg">7</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">0.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">13.4</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:19:00+00:00" time-local="2017-05-26T07:19:00+10:00">5.7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T16:45:00+00:00" time-local="2017-05-26T02:45:00+10:00">19</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T16:45:00+00:00" time-local="2017-05-26T02:45:00+10:00">35</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T16:45:00+00:00" time-local="2017-05-26T02:45:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94959" bom-id="096003" tz="Australia/Hobart" stn-name="BUTLERS GORGE" stn-height="667.00" type="AWS" lat="-42.2753" lon="146.2758" forecast-district-id="TAS_PW008" description="Butlers Gorge">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">4.0</element>
+          <element units="Celsius" type="delta_t">2.4</element>
+          <element units="km/h" type="gust_kmh">13</element>
+          <element units="knots" type="wind_gust_spd">7</element>
+          <element units="Celsius" type="air_temperature">7.4</element>
+          <element units="Celsius" type="dew_point">1.7</element>
+          <element units="%" type="rel-humidity">67</element>
+          <element type="wind_dir">WSW</element>
+          <element units="deg" type="wind_dir_deg">254</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:35:00+00:00" time-local="2017-05-26T10:35:00+10:00">7.8</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T18:47:00+00:00" time-local="2017-05-26T04:47:00+10:00">4.4</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:44:00+00:00" time-local="2017-05-26T01:44:00+10:00">21</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:44:00+00:00" time-local="2017-05-26T01:44:00+10:00">39</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:44:00+00:00" time-local="2017-05-26T01:44:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94976" bom-id="096071" tz="Australia/Hobart" stn-name="LAKE ST CLAIR NATIONAL PARK" stn-height="742.00" type="Non-AWS" lat="-42.1178" lon="146.1772" forecast-district-id="TAS_PW008" description="Lake St Clair">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">1.7</element>
+          <element type="cloud">Mostly cloudy</element>
+          <element type="cloud_oktas">6</element>
+          <element units="Celsius" type="delta_t">0.3</element>
+          <element units="Celsius" type="air_temperature">3.6</element>
+          <element units="Celsius" type="dew_point">2.9</element>
+          <element units="%" type="rel-humidity">95</element>
+          <element units="km" type="vis_km">5</element>
+          <element type="weather">Showers</element>
+          <element units="deg" type="wind_dir_deg">0</element>
+          <element units="km/h" type="wind_spd_kmh">2</element>
+          <element units="knots" type="wind_spd">1</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">3.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94963" bom-id="095063" tz="Australia/Hobart" stn-name="MAYDENA POST OFFICE" stn-height="281.00" type="Non-AWS" lat="-42.7567" lon="146.6239" forecast-district-id="TAS_PW009" description="Maydena">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">4.3</element>
+          <element type="cloud">Mostly cloudy</element>
+          <element type="cloud_oktas">6</element>
+          <element units="Celsius" type="delta_t">0.6</element>
+          <element units="Celsius" type="air_temperature">7.0</element>
+          <element units="Celsius" type="dew_point">5.7</element>
+          <element units="%" type="rel-humidity">91</element>
+          <element units="km" type="vis_km">30</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">270</element>
+          <element units="km/h" type="wind_spd_kmh">9</element>
+          <element units="knots" type="wind_spd">5</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">3.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95952" bom-id="097085" tz="Australia/Hobart" stn-name="MOUNT READ" stn-height="1119.50" type="AWS" lat="-41.8444" lon="145.5417" forecast-district-id="TAS_PW009" description="Mount Read">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-2.1</element>
+          <element units="Celsius" type="delta_t">0.0</element>
+          <element units="km/h" type="gust_kmh">24</element>
+          <element units="knots" type="wind_gust_spd">13</element>
+          <element units="Celsius" type="air_temperature">3.2</element>
+          <element units="Celsius" type="dew_point">3.2</element>
+          <element units="%" type="rel-humidity">100</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">274</element>
+          <element units="km/h" type="wind_spd_kmh">20</element>
+          <element units="knots" type="wind_spd">11</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">23.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">3.3</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:26:00+00:00" time-local="2017-05-26T06:26:00+10:00">0.8</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:50:00+00:00" time-local="2017-05-26T01:50:00+10:00">29</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:50:00+00:00" time-local="2017-05-26T01:50:00+10:00">54</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:50:00+00:00" time-local="2017-05-26T01:50:00+10:00">SW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95958" bom-id="097083" tz="Australia/Hobart" stn-name="SCOTTS PEAK DAM" stn-height="408.00" type="AWS" lat="-43.0425" lon="146.2722" forecast-district-id="TAS_PW009" description="Scotts Peak">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-0.3</element>
+          <element units="Celsius" type="delta_t">0.3</element>
+          <element units="km/h" type="gust_kmh">39</element>
+          <element units="knots" type="wind_gust_spd">21</element>
+          <element units="Celsius" type="air_temperature">7.2</element>
+          <element units="Celsius" type="dew_point">6.5</element>
+          <element units="%" type="rel-humidity">95</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">310</element>
+          <element units="km/h" type="wind_spd_kmh">35</element>
+          <element units="knots" type="wind_spd">19</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.4</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">7.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:15:00+00:00" time-local="2017-05-26T10:15:00+10:00">9.0</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:55:00+00:00" time-local="2017-05-26T06:55:00+10:00">5.7</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:31:00+00:00" time-local="2017-05-26T10:31:00+10:00">27</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:31:00+00:00" time-local="2017-05-26T10:31:00+10:00">50</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:31:00+00:00" time-local="2017-05-26T10:31:00+10:00">WNW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95962" bom-id="097024" tz="Australia/Hobart" stn-name="WARRA" stn-height="495.00" type="AWS" lat="-43.0609" lon="146.7040" forecast-district-id="TAS_PW009" description="Warra">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">3.4</element>
+          <element units="Celsius" type="delta_t">0.2</element>
+          <element units="km/h" type="gust_kmh">13</element>
+          <element units="knots" type="wind_gust_spd">7</element>
+          <element units="Celsius" type="air_temperature">6.4</element>
+          <element units="Celsius" type="dew_point">6.0</element>
+          <element units="%" type="rel-humidity">97</element>
+          <element type="wind_dir">NNW</element>
+          <element units="deg" type="wind_dir_deg">343</element>
+          <element units="km/h" type="wind_spd_kmh">11</element>
+          <element units="knots" type="wind_spd">6</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.8</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:14:00+00:00" time-local="2017-05-26T10:14:00+10:00">7.1</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:06:00+00:00" time-local="2017-05-26T06:06:00+10:00">5.1</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T15:54:00+00:00" time-local="2017-05-26T01:54:00+10:00">23</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T15:54:00+00:00" time-local="2017-05-26T01:54:00+10:00">43</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T15:54:00+00:00" time-local="2017-05-26T01:54:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95954" bom-id="091331" tz="Australia/Hobart" stn-name="CAPE GRIM" stn-height="86.00" type="AWS" lat="-40.6764" lon="144.6922" forecast-district-id="TAS_PW010" description="Cape Grim">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.1</element>
+          <element type="cloud">Cloudy</element>
+          <element type="cloud_oktas">8</element>
+          <element units="Celsius" type="delta_t">3.8</element>
+          <element units="km/h" type="gust_kmh">22</element>
+          <element units="knots" type="wind_gust_spd">12</element>
+          <element units="Celsius" type="air_temperature">13.1</element>
+          <element units="Celsius" type="dew_point">4.8</element>
+          <element units="hPa" type="pres">1020.9</element>
+          <element units="hPa" type="qnh_pres">1020.9</element>
+          <element units="%" type="rel-humidity">57</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">280</element>
+          <element units="km/h" type="wind_spd_kmh">20</element>
+          <element units="knots" type="wind_spd">11</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T10:29:00+10:00">13.8</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T10:14:00+00:00" time-local="2017-05-25T20:14:00+10:00">11.0</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">31</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">57</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:33:00+00:00" time-local="2017-05-26T00:33:00+10:00">SW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95957" bom-id="091107" tz="Australia/Hobart" stn-name="WYNYARD AIRPORT" stn-height="12.00" type="AWS" lat="-40.9964" lon="145.7311" forecast-district-id="TAS_PW010" description="Wynyard">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.6</element>
+          <element type="cloud">Mostly clear</element>
+          <element type="cloud_oktas">1</element>
+          <element units="Celsius" type="delta_t">2.2</element>
+          <element units="km/h" type="gust_kmh">17</element>
+          <element units="knots" type="wind_gust_spd">9</element>
+          <element units="Celsius" type="air_temperature">12.5</element>
+          <element units="Celsius" type="dew_point">8.0</element>
+          <element units="hPa" type="pres">1020.7</element>
+          <element units="hPa" type="qnh_pres">1020.7</element>
+          <element units="%" type="rel-humidity">74</element>
+          <element units="km" type="vis_km">18</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">269</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">12.7</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:24:00+00:00" time-local="2017-05-26T06:24:00+10:00">2.2</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">13</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">24</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:38:00+00:00" time-local="2017-05-26T10:38:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94958" bom-id="091009" tz="Australia/Hobart" stn-name="BURNIE (ROUND HILL)" stn-height="8.00" type="Non-AWS" lat="-41.0661" lon="145.9431" forecast-district-id="TAS_PW010" description="Burnie">
+      <period index="0" time-utc="2017-05-25T23:00:00+00:00" time-local="2017-05-26T09:00:00+10:00" wind-src="mdf">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">8.0</element>
+          <element type="cloud">Partly cloudy</element>
+          <element type="cloud_oktas">3</element>
+          <element units="Celsius" type="delta_t">1.1</element>
+          <element units="Celsius" type="air_temperature">9.4</element>
+          <element units="Celsius" type="dew_point">7.1</element>
+          <element units="%" type="rel-humidity">85</element>
+          <element units="m" type="sea_height">1</element>
+          <element type="swell_dir">NW</element>
+          <element units="m" type="swell_height">0.5</element>
+          <element units="s" type="swell_period">8</element>
+          <element units="km" type="vis_km">40</element>
+          <element type="weather">Fine</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">270</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall">3.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">3.0</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95963" bom-id="091344" tz="UTC" stn-name="BURNIE NTC AWS" stn-height="0.00" type="AWS" lat="-41.0500" lon="145.9149" forecast-district-id="TAS_MW002" description="Burnie Port">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="metar_10">
+        <level index="0" type="surface">
+          <element units="km/h" type="gust_kmh">9</element>
+          <element units="knots" type="wind_gust_spd">5</element>
+          <element units="Celsius" type="air_temperature">11.5</element>
+          <element units="hPa" type="pres">1020.3</element>
+          <element units="hPa" type="msl_pres">1020.3</element>
+          <element units="hPa" type="qnh_pres">1020.3</element>
+          <element type="wind_dir">SW</element>
+          <element units="deg" type="wind_dir_deg">228</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95956" bom-id="091259" tz="Australia/Hobart" stn-name="LUNCHEON HILL (FORESTRY)" stn-height="344.00" type="AWS" lat="-41.1492" lon="145.1517" forecast-district-id="TAS_PW010" description="Luncheon Hill">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">5.0</element>
+          <element units="Celsius" type="delta_t">0.4</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">8.1</element>
+          <element units="Celsius" type="dew_point">7.2</element>
+          <element units="%" type="rel-humidity">94</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">8.0</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:07:00+00:00" time-local="2017-05-26T10:07:00+10:00">9.1</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T18:41:00+00:00" time-local="2017-05-26T04:41:00+10:00">5.9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:25:00+00:00" time-local="2017-05-26T00:25:00+10:00">18</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:25:00+00:00" time-local="2017-05-26T00:25:00+10:00">33</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:25:00+00:00" time-local="2017-05-26T00:25:00+10:00">SSE</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="95960" bom-id="091126" tz="Australia/Hobart" stn-name="DEVONPORT AIRPORT" stn-height="8.00" type="AWS" lat="-41.1701" lon="146.4289" forecast-district-id="TAS_PW010" description="Devonport Airport">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">9.4</element>
+          <element units="Celsius" type="delta_t">2.7</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">12.9</element>
+          <element units="Celsius" type="dew_point">7.4</element>
+          <element units="hPa" type="pres">1020.6</element>
+          <element units="hPa" type="qnh_pres">1020.6</element>
+          <element units="%" type="rel-humidity">69</element>
+          <element units="km" type="vis_km">33</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">275</element>
+          <element units="km/h" type="wind_spd_kmh">15</element>
+          <element units="knots" type="wind_spd">8</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.6</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">12.9</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T16:47:00+00:00" time-local="2017-05-26T02:47:00+10:00">4.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:08:00+00:00" time-local="2017-05-26T10:08:00+10:00">12</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:08:00+00:00" time-local="2017-05-26T10:08:00+10:00">22</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:08:00+00:00" time-local="2017-05-26T10:08:00+10:00">WSW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94955" bom-id="091291" tz="Australia/Hobart" stn-name="SHEFFIELD SCHOOL FARM" stn-height="294.20" type="AWS" lat="-41.3886" lon="146.3219" forecast-district-id="TAS_PW010" description="Sheffield">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">6.9</element>
+          <element units="Celsius" type="delta_t">2.1</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">10.0</element>
+          <element units="Celsius" type="dew_point">5.5</element>
+          <element units="%" type="rel-humidity">73</element>
+          <element type="wind_dir">NNW</element>
+          <element units="deg" type="wind_dir_deg">331</element>
+          <element units="km/h" type="wind_spd_kmh">11</element>
+          <element units="knots" type="wind_spd">6</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">1.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00">10.2</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T21:29:00+00:00" time-local="2017-05-26T07:29:00+10:00">4.6</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:06:00+00:00" time-local="2017-05-26T00:06:00+10:00">18</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:06:00+00:00" time-local="2017-05-26T00:06:00+10:00">33</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:06:00+00:00" time-local="2017-05-26T00:06:00+10:00">W</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94850" bom-id="098017" tz="Australia/Hobart" stn-name="KING ISLAND AIRPORT" stn-height="37.00" type="AWS" lat="-39.8801" lon="143.8829" forecast-district-id="TAS_PW011" description="King Island Airport">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">10.1</element>
+          <element type="cloud">Cloudy</element>
+          <element type="cloud_oktas">8</element>
+          <element units="Celsius" type="delta_t">3.8</element>
+          <element units="km/h" type="gust_kmh">15</element>
+          <element units="knots" type="wind_gust_spd">8</element>
+          <element units="Celsius" type="air_temperature">13.6</element>
+          <element units="Celsius" type="dew_point">5.5</element>
+          <element units="hPa" type="pres">1021.8</element>
+          <element units="hPa" type="qnh_pres">1021.8</element>
+          <element units="%" type="rel-humidity">58</element>
+          <element units="km" type="vis_km">28</element>
+          <element type="wind_dir">W</element>
+          <element units="deg" type="wind_dir_deg">274</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.0</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.2</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:19:00+00:00" time-local="2017-05-26T10:19:00+10:00">14.1</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T20:44:00+00:00" time-local="2017-05-26T06:44:00+10:00">10.5</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T14:38:00+00:00" time-local="2017-05-26T00:38:00+10:00">18</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T14:38:00+00:00" time-local="2017-05-26T00:38:00+10:00">33</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T14:38:00+00:00" time-local="2017-05-26T00:38:00+10:00">SW</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89817" bom-id="300061" tz="UTC" stn-name="BUNGER HILLS" stn-height="12.00" type="AWS" lat="-66.2510" lon="100.6000" forecast-district-id="TAS_FA001" description="Bunger Hills">
+      <period index="0" time-utc="2017-05-24T23:00:00+00:00" time-local="2017-05-24T23:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="air_temperature">-17.8</element>
+          <element type="wind_dir">E</element>
+          <element units="deg" type="wind_dir_deg">100</element>
+          <element units="km/h" type="wind_spd_kmh">4</element>
+          <element units="knots" type="wind_spd">2</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89611" bom-id="300017" tz="Australia/Casey" stn-name="CASEY" stn-height="40.00" type="AWS" lat="-66.2825" lon="110.5231" forecast-district-id="TAS_FA001" description="Casey">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T08:40:00+08:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-12.3</element>
+          <element units="km/h" type="gust_kmh">6</element>
+          <element units="knots" type="wind_gust_spd">3</element>
+          <element units="Celsius" type="air_temperature">-8.1</element>
+          <element units="Celsius" type="dew_point">-9.6</element>
+          <element units="hPa" type="pres">1003.5</element>
+          <element units="hPa" type="qnh_pres">1003.5</element>
+          <element units="%" type="rel-humidity">89</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">111</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+          <element start-time-local="2017-05-26T06:00:00+08:00" end-time-local="2017-05-26T21:00:00+08:00" start-time-utc="2017-05-25T22:00:00+00:00" end-time-utc="2017-05-26T13:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-25T22:15:00+00:00" time-local="2017-05-26T06:15:00+08:00">-7.5</element>
+          <element start-time-local="2017-05-25T18:00:00+08:00" end-time-local="2017-05-26T09:00:00+08:00" start-time-utc="2017-05-25T10:00:00+00:00" end-time-utc="2017-05-26T01:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T12:36:00+00:00" time-local="2017-05-25T20:36:00+08:00">-9.6</element>
+          <element start-time-local="2017-05-26T00:00:00+08:00" end-time-local="2017-05-27T00:00:00+08:00" start-time-utc="2017-05-25T16:00:00+00:00" end-time-utc="2017-05-26T16:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T22:32:00+00:00" time-local="2017-05-26T06:32:00+08:00">10</element>
+          <element start-time-local="2017-05-26T00:00:00+08:00" end-time-local="2017-05-27T00:00:00+08:00" start-time-utc="2017-05-25T16:00:00+00:00" end-time-utc="2017-05-26T16:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T22:32:00+00:00" time-local="2017-05-26T06:32:00+08:00">19</element>
+          <element start-time-local="2017-05-26T00:00:00+08:00" end-time-local="2017-05-27T00:00:00+08:00" start-time-utc="2017-05-25T16:00:00+00:00" end-time-utc="2017-05-26T16:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T22:32:00+00:00" time-local="2017-05-26T06:32:00+08:00">NE</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89610" bom-id="300046" tz="UTC" stn-name="CAPE POINSETT" stn-height="90.00" type="AWS" lat="-65.8449" lon="113.0667" forecast-district-id="TAS_FA001" description="Cape Poinsett">
+      <period index="0" time-utc="2017-05-25T23:30:00+00:00" time-local="2017-05-25T23:30:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="air_temperature">-8.7</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">110</element>
+          <element units="km/h" type="wind_spd_kmh">46</element>
+          <element units="knots" type="wind_spd">25</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89512" bom-id="989512" tz="UTC" stn-name="NOVOLAZAREVSKAJA" stn-height="102.00" type="Non-AWS" lat="-70.7667" lon="11.8333" forecast-district-id="TAS_FA001" description="Novolazarevskaja">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-24.9</element>
+          <element type="cloud">Partly cloudy</element>
+          <element units="m" type="cloud_base_m">2500</element>
+          <element type="cloud_oktas">5</element>
+          <element type="cloud_type_id">30</element>
+          <element units="Celsius" type="air_temperature">-10.9</element>
+          <element units="Celsius" type="dew_point">-25.6</element>
+          <element units="hPa" type="pres">991.6</element>
+          <element units="hPa" type="msl_pres">991.6</element>
+          <element units="%" type="rel-humidity">29</element>
+          <element units="km" type="vis_km">20</element>
+          <element units="deg" type="wind_dir_deg">150</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89532" bom-id="989532" tz="UTC" stn-name="SYOWA" stn-height="21.00" type="Non-AWS" lat="-69.0000" lon="39.5833" forecast-district-id="TAS_FA001" description="Syowa">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-29.7</element>
+          <element type="cloud">Mostly clear</element>
+          <element units="m" type="cloud_base_m">2500</element>
+          <element type="cloud_oktas">1</element>
+          <element type="cloud_type_id">30</element>
+          <element units="Celsius" type="air_temperature">-17.8</element>
+          <element units="Celsius" type="dew_point">-26.1</element>
+          <element units="hPa" type="pres">983.7</element>
+          <element units="hPa" type="msl_pres">983.7</element>
+          <element units="%" type="rel-humidity">48</element>
+          <element units="km" type="vis_km">20</element>
+          <element type="wind_dir">ENE</element>
+          <element units="deg" type="wind_dir_deg">60</element>
+          <element units="km/h" type="wind_spd_kmh">43</element>
+          <element units="knots" type="wind_spd">23</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="94998" bom-id="300004" tz="Australia/Hobart" stn-name="MACQUARIE ISLAND" stn-height="6.00" type="AWS" lat="-54.4994" lon="158.9369" forecast-district-id="TAS_FA001" description="Macquarie Island">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T10:40:00+10:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-6.4</element>
+          <element units="Celsius" type="delta_t">0.9</element>
+          <element units="km/h" type="gust_kmh">65</element>
+          <element units="knots" type="wind_gust_spd">35</element>
+          <element units="Celsius" type="air_temperature">6.1</element>
+          <element units="Celsius" type="dew_point">4.1</element>
+          <element units="hPa" type="pres">989.4</element>
+          <element units="hPa" type="qnh_pres">989.4</element>
+          <element units="%" type="rel-humidity">87</element>
+          <element type="wind_dir">NW</element>
+          <element units="deg" type="wind_dir_deg">320</element>
+          <element units="km/h" type="wind_spd_kmh">59</element>
+          <element units="knots" type="wind_spd">32</element>
+          <element start-time-local="2017-05-26T09:00:00+10:00" end-time-local="2017-05-26T10:41:00+10:00" duration="101" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T00:41:00+00:00" units="mm" type="rainfall">0.4</element>
+          <element start-time-local="2017-05-25T09:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" duration="1440" start-time-utc="2017-05-24T23:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="mm" type="rainfall_24hr">2.4</element>
+          <element start-time-local="2017-05-26T06:00:00+10:00" end-time-local="2017-05-26T21:00:00+10:00" start-time-utc="2017-05-25T20:00:00+00:00" end-time-utc="2017-05-26T11:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-25T23:20:00+00:00" time-local="2017-05-26T09:20:00+10:00">7.2</element>
+          <element start-time-local="2017-05-25T18:00:00+10:00" end-time-local="2017-05-26T09:00:00+10:00" start-time-utc="2017-05-25T08:00:00+00:00" end-time-utc="2017-05-25T23:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T19:15:00+00:00" time-local="2017-05-26T05:15:00+10:00">4.9</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T22:44:00+00:00" time-local="2017-05-26T08:44:00+10:00">43</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T22:44:00+00:00" time-local="2017-05-26T08:44:00+10:00">80</element>
+          <element start-time-local="2017-05-26T00:00:00+10:00" end-time-local="2017-05-27T00:00:00+10:00" start-time-utc="2017-05-25T14:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T22:44:00+00:00" time-local="2017-05-26T08:44:00+10:00">N</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89815" bom-id="300012" tz="Australia/Casey" stn-name="HAUPT NUNATAK" stn-height="63.00" type="AWS" lat="-66.5819" lon="110.6939" forecast-district-id="TAS_FA001" description="Haupt Nunatak">
+      <period index="0" time-utc="2017-05-25T23:30:00+00:00" time-local="2017-05-26T07:30:00+08:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="air_temperature">-11.6</element>
+          <element type="wind_dir">S</element>
+          <element units="deg" type="wind_dir_deg">180</element>
+          <element units="km/h" type="wind_spd_kmh">65</element>
+          <element units="knots" type="wind_spd">35</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89809" bom-id="300060" tz="UTC" stn-name="CASEY SKIWAY SOUTH" stn-height="390.00" type="AWS" lat="-66.2803" lon="110.7615" forecast-district-id="TAS_FA001" description="Skiway South">
+      <period index="0" time-utc="2017-05-25T00:30:00+00:00" time-local="2017-05-25T00:30:00+00:00" wind-src="metar">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-17.4</element>
+          <element units="Celsius" type="delta_t">0.8</element>
+          <element units="km/h" type="gust_kmh">17</element>
+          <element units="knots" type="wind_gust_spd">9</element>
+          <element units="Celsius" type="air_temperature">-11.5</element>
+          <element units="Celsius" type="dew_point">-17.3</element>
+          <element units="hPa" type="pres">990.2</element>
+          <element units="hPa" type="qnh_pres">990.2</element>
+          <element units="%" type="rel-humidity">62</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">120</element>
+          <element units="km/h" type="wind_spd_kmh">13</element>
+          <element units="knots" type="wind_spd">7</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89571" bom-id="300000" tz="Australia/Davis" stn-name="DAVIS" stn-height="18.00" type="AWS" lat="-68.5744" lon="77.9672" forecast-district-id="TAS_FA001" description="Davis">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T07:40:00+07:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-20.2</element>
+          <element units="km/h" type="gust_kmh">72</element>
+          <element units="knots" type="wind_gust_spd">39</element>
+          <element units="Celsius" type="air_temperature">-5.4</element>
+          <element units="Celsius" type="dew_point">-11.5</element>
+          <element units="hPa" type="pres">980.6</element>
+          <element units="hPa" type="qnh_pres">980.6</element>
+          <element units="%" type="rel-humidity">62</element>
+          <element type="wind_dir">ENE</element>
+          <element units="deg" type="wind_dir_deg">59</element>
+          <element units="km/h" type="wind_spd_kmh">61</element>
+          <element units="knots" type="wind_spd">33</element>
+          <element start-time-local="2017-05-26T06:00:00+07:00" end-time-local="2017-05-26T21:00:00+07:00" start-time-utc="2017-05-25T23:00:00+00:00" end-time-utc="2017-05-26T14:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:39:00+00:00" time-local="2017-05-26T07:39:00+07:00">-5.1</element>
+          <element start-time-local="2017-05-25T18:00:00+07:00" end-time-local="2017-05-26T09:00:00+07:00" start-time-utc="2017-05-25T11:00:00+00:00" end-time-utc="2017-05-26T02:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T11:09:00+00:00" time-local="2017-05-25T18:09:00+07:00">-8.8</element>
+          <element start-time-local="2017-05-26T00:00:00+07:00" end-time-local="2017-05-27T00:00:00+07:00" start-time-utc="2017-05-25T17:00:00+00:00" end-time-utc="2017-05-26T17:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-25T17:11:00+00:00" time-local="2017-05-26T00:11:00+07:00">68</element>
+          <element start-time-local="2017-05-26T00:00:00+07:00" end-time-local="2017-05-27T00:00:00+07:00" start-time-utc="2017-05-25T17:00:00+00:00" end-time-utc="2017-05-26T17:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-25T17:11:00+00:00" time-local="2017-05-26T00:11:00+07:00">126</element>
+          <element start-time-local="2017-05-26T00:00:00+07:00" end-time-local="2017-05-27T00:00:00+07:00" start-time-utc="2017-05-25T17:00:00+00:00" end-time-utc="2017-05-26T17:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-25T17:11:00+00:00" time-local="2017-05-26T00:11:00+07:00">ENE</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89642" bom-id="989642" tz="UTC" stn-name="DUMONT D URVILLE" stn-height="43.00" type="Non-AWS" lat="-66.6631" lon="140.0081" forecast-district-id="TAS_FA001" description="Dumont D'urville">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-21.5</element>
+          <element type="cloud">Mostly clear</element>
+          <element units="m" type="cloud_base_m">2500</element>
+          <element type="cloud_oktas">1</element>
+          <element type="cloud_type_id">30</element>
+          <element units="Celsius" type="air_temperature">-16.6</element>
+          <element units="Celsius" type="dew_point">-25.8</element>
+          <element units="hPa" type="pres">1002.0</element>
+          <element units="hPa" type="msl_pres">1002.0</element>
+          <element units="%" type="rel-humidity">45</element>
+          <element units="km" type="vis_km">40</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">120</element>
+          <element units="km/h" type="wind_spd_kmh">6</element>
+          <element units="knots" type="wind_spd">3</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89767" bom-id="300039" tz="UTC" stn-name="G3" stn-height="84.00" type="AWS" lat="-70.8919" lon="69.8725" forecast-district-id="TAS_FA001" description="Amery">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00">
+        <level index="0" type="surface"/>
+      </period>
+    </station>
+    <station wmo-id="89564" bom-id="300001" tz="Australia/Mawson" stn-name="MAWSON" stn-height="9.90" type="AWS" lat="-67.6017" lon="62.8753" forecast-district-id="TAS_FA001" description="Mawson">
+      <period index="0" time-utc="2017-05-26T00:40:00+00:00" time-local="2017-05-26T06:40:00+06:00" wind-src="OMD">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-33.3</element>
+          <element units="km/h" type="gust_kmh">106</element>
+          <element units="knots" type="wind_gust_spd">57</element>
+          <element units="Celsius" type="air_temperature">-11.5</element>
+          <element units="Celsius" type="dew_point">-12.4</element>
+          <element units="hPa" type="pres">975.4</element>
+          <element units="hPa" type="qnh_pres">975.4</element>
+          <element units="%" type="rel-humidity">93</element>
+          <element type="wind_dir">SE</element>
+          <element units="deg" type="wind_dir_deg">125</element>
+          <element units="km/h" type="wind_spd_kmh">98</element>
+          <element units="knots" type="wind_spd">53</element>
+          <element start-time-local="2017-05-26T06:00:00+06:00" end-time-local="2017-05-26T21:00:00+06:00" start-time-utc="2017-05-26T00:00:00+00:00" end-time-utc="2017-05-26T15:00:00+00:00" units="Celsius" type="maximum_air_temperature" instance="running" time-utc="2017-05-26T00:22:00+00:00" time-local="2017-05-26T06:22:00+06:00">-11.3</element>
+          <element start-time-local="2017-05-25T18:00:00+06:00" end-time-local="2017-05-26T09:00:00+06:00" start-time-utc="2017-05-25T12:00:00+00:00" end-time-utc="2017-05-26T03:00:00+00:00" units="Celsius" type="minimum_air_temperature" instance="running" time-utc="2017-05-25T12:46:00+00:00" time-local="2017-05-25T18:46:00+06:00">-16.6</element>
+          <element start-time-local="2017-05-26T00:00:00+06:00" end-time-local="2017-05-27T00:00:00+06:00" start-time-utc="2017-05-25T18:00:00+00:00" end-time-utc="2017-05-26T18:00:00+00:00" units="knots" type="maximum_gust_spd" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T06:29:00+06:00">68</element>
+          <element start-time-local="2017-05-26T00:00:00+06:00" end-time-local="2017-05-27T00:00:00+06:00" start-time-utc="2017-05-25T18:00:00+00:00" end-time-utc="2017-05-26T18:00:00+00:00" units="km/h" type="maximum_gust_kmh" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T06:29:00+06:00">126</element>
+          <element start-time-local="2017-05-26T00:00:00+06:00" end-time-local="2017-05-27T00:00:00+06:00" start-time-utc="2017-05-25T18:00:00+00:00" end-time-utc="2017-05-26T18:00:00+00:00" type="maximum_gust_dir" instance="running" time-utc="2017-05-26T00:29:00+00:00" time-local="2017-05-26T06:29:00+06:00">SE</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89664" bom-id="989664" tz="UTC" stn-name="MCMURDO" stn-height="24.00" type="Non-AWS" lat="-77.8500" lon="166.6667" forecast-district-id="TAS_FA001" description="McMurdo">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-25.3</element>
+          <element type="cloud">Mostly cloudy</element>
+          <element units="m" type="cloud_base_m">1500</element>
+          <element type="cloud_oktas">6</element>
+          <element type="cloud_type_id">35</element>
+          <element units="Celsius" type="air_temperature">-18.0</element>
+          <element units="Celsius" type="dew_point">-23.3</element>
+          <element units="hPa" type="pres">1002.6</element>
+          <element units="hPa" type="msl_pres">1002.6</element>
+          <element units="%" type="rel-humidity">63</element>
+          <element units="km" type="vis_km">11</element>
+          <element type="wind_dir">E</element>
+          <element units="deg" type="wind_dir_deg">80</element>
+          <element units="km/h" type="wind_spd_kmh">19</element>
+          <element units="knots" type="wind_spd">10</element>
+        </level>
+      </period>
+    </station>
+    <station wmo-id="89592" bom-id="989592" tz="UTC" stn-name="MIRNYJ" stn-height="35.00" type="Non-AWS" lat="-66.5500" lon="93.0167" forecast-district-id="TAS_FA001" description="Mirnyj">
+      <period index="0" time-utc="2017-05-26T00:00:00+00:00" time-local="2017-05-26T00:00:00+00:00" wind-src="synop">
+        <level index="0" type="surface">
+          <element units="Celsius" type="apparent_temp">-25.0</element>
+          <element type="cloud">Cloudy</element>
+          <element units="m" type="cloud_base_m">600</element>
+          <element type="cloud_oktas">8</element>
+          <element type="cloud_type_id">35</element>
+          <element units="Celsius" type="air_temperature">-8.3</element>
+          <element units="Celsius" type="dew_point">-9.9</element>
+          <element units="hPa" type="pres">992.9</element>
+          <element units="hPa" type="msl_pres">992.9</element>
+          <element units="%" type="rel-humidity">88</element>
+          <element units="km" type="vis_km">2</element>
+          <element type="weather">Blowing snow</element>
+          <element type="wind_dir">ESE</element>
+          <element units="deg" type="wind_dir_deg">110</element>
+          <element units="km/h" type="wind_spd_kmh">72</element>
+          <element units="knots" type="wind_spd">39</element>
+        </level>
+      </period>
+    </station>
+  </observations>
+</product>

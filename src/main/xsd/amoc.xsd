@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified" version="1.6.1"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty">
+  <xsd:annotation>
+    <xsd:documentation>Filename : amoc.xsd Organisation : Australian Bureau of
+    Meteorology Date : 24/06/2015 Description : AMOC - Australian
+    Meteorological and Oceanographic Code Notes : Added Oceonography to type
+    of regions</xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="amoc" type="amocType"/>
+
+  <xsd:complexType name="amocType">
+    <xsd:annotation>
+      <xsd:documentation>This is the root element that is used to identify the
+      XML data as AMOC XML.</xsd:documentation>
+
+      <xsd:documentation>This tag allows the AMOC metadata to be easily
+      identified when it is embedded within a product formatted as XML or
+      HTML.</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:sequence>
+      <xsd:element name="source" type="sourceType"/>
+
+      <xsd:element name="identifier" type="identifierType"/>
+
+      <xsd:element name="issue-time-utc" type="timestampType"/>
+
+      <xsd:element name="issue-time-local" type="timestampType"/>
+
+      <xsd:element minOccurs="1" name="sent-time" type="xsd:dateTime"/>
+
+      <xsd:element minOccurs="0" name="expiry-time" type="xsd:dateTime"/>
+
+      <xsd:element minOccurs="0" name="validity-bgn-time-local"
+                   type="timestampType"/>
+
+      <xsd:element minOccurs="0" name="validity-end-time-local"
+                   type="timestampType"/>
+
+      <xsd:element minOccurs="0" name="next-routine-issue-time-utc"
+                   type="timestampType"/>
+
+      <xsd:element minOccurs="0" name="next-routine-issue-time-local"
+                   type="timestampType"/>
+
+      <xsd:element name="status" type="statusType"/>
+
+      <xsd:element name="service" type="serviceType"/>
+
+      <xsd:element minOccurs="0" name="sub-service" type="sub-serviceType"/>
+
+      <xsd:element name="product-type" type="product-typeType"/>
+
+      <xsd:element name="phase" type="phaseType"/>
+
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="hazard"
+                   type="hazardType"/>
+                   
+      <xsd:element minOccurs="0" name="incident-id" type="xsd:string"/>
+    </xsd:sequence>
+
+    <xsd:attribute default="1.3" name="version" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="timestampType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:dateTime">
+        <xsd:attribute name="tz" type="xsd:string" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="sourceType">
+    <xsd:annotation>
+      <xsd:documentation>This tag groups together a set of source metadata
+      attributes. These attributes identify who sent the product, from which
+      office the product was sent and copyright and disclaimer
+      information.</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:sequence>
+      <xsd:element name="sender" type="xsd:string"/>
+
+      <xsd:element maxOccurs="1" minOccurs="0" name="region" type="xsd:string"/>
+
+      <xsd:element name="office" type="xsd:string"/>
+
+      <xsd:element name="copyright" type="xsd:anyURI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">Copyright message regarding the
+          product.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+
+      <xsd:element name="disclaimer" type="xsd:anyURI">
+        <xsd:annotation>
+          <xsd:documentation>Disclaimer message regarding the
+          product.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+
+      <xsd:element minOccurs="0" name="description" type="xsd:anyURI">
+        <xsd:annotation>
+          <xsd:documentation>URL of description of the
+          product.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="identifierType">
+    <xsd:annotation>
+      <xsd:documentation>IDSnnnnn is the product ID code where S is the
+      originating state (V=Vic, N=NSW/ACT, Q=Qld, S=SA, W=WA, D=NT, T=Tas.,
+      Y=NMOC, O=Oceanography)</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="ID(V|N|Q|S|W|D|T|Y|O)\d{5}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="statusType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">Describes the status of the product.
+      The valid status codes are:</xsd:documentation>
+
+      <xsd:documentation xml:lang="en">O - Operational,T - Test,E -
+      Experimental,S - System</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="O"/>
+
+      <xsd:enumeration value="T"/>
+
+      <xsd:enumeration value="E"/>
+
+      <xsd:enumeration value="S"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="serviceType">
+    <xsd:restriction base="xsd:string">
+    	<xsd:minLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="sub-serviceType">
+
+    <xsd:restriction base="xsd:string">
+    	<xsd:minLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="product-typeType">
+    <xsd:annotation>
+      <xsd:documentation>Describes the product type. The valid types
+      are:</xsd:documentation>
+
+      <xsd:documentation>A - Advice/Alert, B - Bundle, C - Climate, D -
+      Metadata, E - Statement (Media), F - Forecast, L - Outlook, M - Model
+      Output, N - Synopsis, O - Observation, R - Radar, S - Special, T -
+      Satellite, W - Warning, Y - Watch X - Mixed</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="A"/>
+
+      <xsd:enumeration value="B"/>
+
+      <xsd:enumeration value="C"/>
+
+      <xsd:enumeration value="D"/>
+
+      <xsd:enumeration value="E"/>
+
+      <xsd:enumeration value="F"/>
+
+      <xsd:enumeration value="L"/>
+
+      <xsd:enumeration value="M"/>
+
+      <xsd:enumeration value="N"/>
+
+      <xsd:enumeration value="O"/>
+
+      <xsd:enumeration value="R"/>
+
+      <xsd:enumeration value="S"/>
+
+      <xsd:enumeration value="T"/>
+
+      <xsd:enumeration value="W"/>
+
+      <xsd:enumeration value="Y"/>
+
+      <xsd:enumeration value="X"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="hazard-typeType">
+    <xsd:annotation>
+      <xsd:documentation>Hazard types: MWW - Marine Wind Warning, STW - Severe
+      Thunderstorm Warning, SWW - Severe Weather Warning, FWW - Fire Weather
+      Warning, RWA - Road Weather Alert, BWA - Bushwalker Weather Alert, SHW -
+      Warning to Sheep Graziers, FRW - Frost Warning, BRA - Brown Rot Advice,
+      DMA - Downy Mildew Advice, BGA - Barley Growers Advice, FLW - Flood
+      Watch or Warning, TCW - Tropical Cyclone Watch or Warning, TSW - Tsunami
+      Threat Watch or Warning, BAN - Fire Ban Advice, ALW - Aviation Lightning
+      Warning, ATA - Aerodrome Thunderstorm Alert</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MWW"/>
+
+      <xsd:enumeration value="STW"/>
+
+      <xsd:enumeration value="SWW"/>
+
+      <xsd:enumeration value="FWW"/>
+
+      <xsd:enumeration value="RWA"/>
+
+      <xsd:enumeration value="BWA"/>
+
+      <xsd:enumeration value="SHW"/>
+
+      <xsd:enumeration value="FRW"/>
+
+      <xsd:enumeration value="BRA"/>
+
+      <xsd:enumeration value="DMA"/>
+
+      <xsd:enumeration value="BGA"/>
+
+      <xsd:enumeration value="FLW"/>
+
+      <xsd:enumeration value="TCW"/>
+
+      <xsd:enumeration value="TSW"/>
+
+      <xsd:enumeration value="BAN"/>
+
+      <xsd:enumeration value="ALW"/>
+
+      <xsd:enumeration value="ATA"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="severityType">
+    <xsd:restriction base="xsd:string">
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="urgencyType">
+    <xsd:restriction base="xsd:string">
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="certaintyType">
+    <xsd:restriction base="xsd:string">
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="periodicHazardType">
+    <xsd:sequence>
+      <xsd:element name="area-list" type="area-listType"/>
+
+      <xsd:element minOccurs="0" name="phenomenon-list"
+                   type="phenomenon-listType"/>
+
+      <xsd:element minOccurs="0" name="priority" type="priorityType"/>
+
+      <xsd:element minOccurs="0" name="headline" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>A short description of the hazard. This could be
+          automatically generated from the hazards area, type, severity and
+          phenomena information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="text">
+        <xsd:complexType mixed="true">
+          <xsd:sequence minOccurs="0">
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="p"
+                         type="xsd:string"/>
+          </xsd:sequence>
+
+          <xsd:attribute name="type" type="xsd:string" use="required"/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+
+    <xsd:attribute name="index" type="xsd:int" use="required"/>
+
+    <xsd:attribute name="type" type="hazard-typeType" use="required"/>
+
+    <xsd:attribute name="severity" type="severityType" use="required"/>
+
+    <xsd:attribute name="urgency" type="urgencyType" use="optional"/>
+
+    <xsd:attribute name="certainty" type="certaintyType" use="optional"/>
+
+    <xsd:attribute name="phase" type="phaseType" use="optional"/>
+
+    <xsd:attribute name="parent-aac" type="aacType" use="optional"/>
+
+  </xsd:complexType>
+
+  <xsd:complexType name="hazardType">
+    <xsd:complexContent>
+      <xsd:extension base="periodicHazardType">
+        <xsd:attribute name="start-time-utc" type="xsd:dateTime"
+                       use="required"/>
+
+        <xsd:attribute name="start-time-local" type="xsd:dateTime"
+                       use="optional"/>
+
+        <xsd:attribute name="end-time-utc" type="xsd:dateTime" use="required"/>
+
+        <xsd:attribute name="end-time-local" type="xsd:dateTime"
+                       use="optional"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="area-listType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="area">
+        <xsd:complexType>
+          <xsd:attribute name="aac" type="aacType" use="required"/>
+
+          <xsd:attribute name="phase" type="phaseType" use="required"/>
+
+          <xsd:attribute name="description" type="xsd:string" use="optional"/>
+
+          <xsd:attribute name="type" type="xsd:string" use="optional"/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="aacType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="(AUS|NSW|VIC|QLD|SA|WA|TAS|NT)_(CO|FA|PW|MW|CW|FW|ME|PT|RC|RD|TC|LG|RA|FR|FG|EV|RS|QH|RT|AL|PC|AA|TP|TS)\d{3}"/>
+
+      <xsd:pattern value="(AUS|NSW|VIC|QLD|SA|WA|TAS|NT)_(RO)\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="phaseType">
+    <xsd:annotation>
+      <xsd:documentation>A three letter code describes the update phase
+      associated with the product (c.f. hazard phase). This code is normally
+      associated with a warning product to indicate the overall update phase
+      of all the hazards within the product. For other product types this
+      would usually default to "NEW" except for updates to forecasts, which
+      would be labeled as "UPD".</xsd:documentation>
+
+      <xsd:documentation>NEW - New event, e.g. initial warning in the
+      specified area</xsd:documentation>
+
+      <xsd:documentation>REN - Renewal of a hazard: This is used when a hazard
+      is reissued without change to its status, i.e. the same severity and
+      phenomena are being specified as in the previous
+      issue.</xsd:documentation>
+
+      <xsd:documentation>UPD - Update of an event, DGD - Downgrade of an
+      event, UGD - Upgrade of an event, FIN - Final event, CAN - Cancellation
+      of an event</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NEW"/>
+
+      <xsd:enumeration value="REN"/>
+
+      <xsd:enumeration value="UPD"/>
+
+      <xsd:enumeration value="DGD"/>
+
+      <xsd:enumeration value="UGD"/>
+
+      <xsd:enumeration value="FIN"/>
+
+      <xsd:enumeration value="CAN"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="phenomenon-listType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="phenomenon">
+        <xsd:complexType>
+          <xsd:attribute name="type" type="phenomenonType" use="required"/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="phenomenonType">
+
+    <xsd:restriction base="xsd:string">
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="priorityType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">Priority is a single letter code
+      describing the priority or urgency of the hazard. For non-warning
+      products this would usually default to "X" and can be omitted. The valid
+      priority codes are:</xsd:documentation>
+
+      <xsd:documentation>X - Routine, W - Warning, F - Flash, S - SEWS(
+      Standard Emergency Warning Signal) signal required</xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="X"/>
+
+      <xsd:enumeration value="W"/>
+
+      <xsd:enumeration value="F"/>
+
+      <xsd:enumeration value="S"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
