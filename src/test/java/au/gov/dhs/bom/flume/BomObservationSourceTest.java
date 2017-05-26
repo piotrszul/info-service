@@ -2,6 +2,8 @@ package au.gov.dhs.bom.flume;
 
 import static org.junit.Assert.*;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,8 +49,9 @@ public class BomObservationSourceTest {
 	  @Test
 	  public void testSomething() throws Exception {
 		    Context context = new Context();
-		    //context.put(SpoolDirectorySourceConfigurationConstants.SPOOL_DIRECTORY,
-		    //    tmpDir.getAbsolutePath());
+		    
+		    Path  relativeIDT60920Path = Paths.get("src/test/xml/IDT60920.xml"); 
+		    context.put(BomObservationSourceConstants.RESOURCE_URL, relativeIDT60920Path.toAbsolutePath().toUri().toASCIIString());
 		    Configurables.configure(source, context);
 		    source.start();
 		    
