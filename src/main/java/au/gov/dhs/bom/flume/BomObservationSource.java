@@ -51,6 +51,9 @@ public class BomObservationSource extends AbstractSource
 			logger.error("resourceUrl is not a valid url", ex);
 			Throwables.propagate(ex);
 		}
+		
+		poolingIntervalInSec = context.getInteger("poolingIntervalInSec" , 60);
+		
 		if (sourceCounter == null) {
 			sourceCounter = new SourceCounter(getName());
 		}
