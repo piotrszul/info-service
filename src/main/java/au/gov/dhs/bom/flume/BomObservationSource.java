@@ -35,21 +35,28 @@ public class BomObservationSource extends AbstractSource
 	private SourceCounter sourceCounter;
 	private ScheduledExecutorService executor;
 	private EventReader reader;
+	
+	// // configurable
 	private int batchSize = 100;
+	private URL resourceURL;
+	private long poolingIntervalInSec = 60;
 	
 	
 	@Override
-	public synchronized void configure(Context arg0) {
-		// TODO Auto-generated method stub
+	public synchronized void configure(Context context) {
 		
+		try {
+			resourceURL = new URL(context.getString(BomObservationSourceConstants.RESOURCE_URL));
+		} catch (MalformedURLException ex) {
+			logger.error("resourceUrl is not a valid url", ex);
+			Throwables.propagate(ex);
+		}
 		if (sourceCounter == null) {
 			sourceCounter = new SourceCounter(getName());
 		}
-		try {
-			reader = new URLEventReader(new URL("file:///Users/szu004/contract/dhs/info-services/src/test/xml/IDT60920.xml"));
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	
+		if (reader == null) {
+			reader = new URLEventReader(resourceURL);
 		}
 	}
 
@@ -61,7 +68,7 @@ public class BomObservationSource extends AbstractSource
 		
 	    Runnable runner = new BomServiceRunable(sourceCounter);
 	    executor.scheduleWithFixedDelay(
-	        runner, 0, 1000, TimeUnit.MILLISECONDS);
+	        runner, 0, poolingIntervalInSec, TimeUnit.SECONDS);
 		
 		super.start();
 		sourceCounter.start();
