@@ -32,6 +32,19 @@
 			<artifactId>flume-ng-core</artifactId>
 			<version>1.6.0-cdh5.11.0</version>
 		</dependency>
+		<!-- For the Twitter API -->
+		<dependency>
+			<groupId>org.twitter4j</groupId>
+			<artifactId>twitter4j-stream</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<pluginManagement>
@@ -93,6 +106,23 @@
 						<artifactId>jaxb2-basics</artifactId>
 						<version>1.11.1</version>
 					</dependency>
+					<!--  dependency>
+						<groupId>org.codehaus.jackson</groupId>
+						<artifactId>jackson-mapper-asl</artifactId>
+						<version>1.9.3</version>
+					</dependency>
+					<dependency>
+						<groupId>com.sun.xml.bind</groupId>
+						<artifactId>jaxb-xjc</artifactId>
+                        <version>2.2.11</version>
+ 					</dependency>
+					<dependency>
+						<groupId>com.nokia.util.avro</groupId>
+						<version>0.4-SNAPSHOT</version>
+						<artifactId>schemagen-core</artifactId>
+						<scope>system</scope>
+						<systemPath>/Users/szu004/contract/dhs/Avro-Schema-Generator/SchemaCompiler/schemagen-core/target/schemagen-core-0.4-SNAPSHOT.jar</systemPath>
+					</dependency-->
 				</dependencies>
 			</plugin>
 			<!-- plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-shade-plugin</artifactId> 

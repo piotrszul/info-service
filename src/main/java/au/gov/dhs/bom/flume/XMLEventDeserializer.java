@@ -15,12 +15,16 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.event.EventBuilder;
 import org.apache.flume.serialization.EventDeserializer;
+import org.apache.flume.serialization.ResettableInputStream;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+
+import com.google.common.base.Throwables;
 
 public class XMLEventDeserializer implements EventDeserializer {
 
@@ -108,7 +112,61 @@ public class XMLEventDeserializer implements EventDeserializer {
 
 	@Override
 	public void reset() throws IOException {
-		reader.reset();
+		elementIndex = 0;
 	}
 
+	static class InputStreamWrapper extends InputStream {
+
+		final ResettableInputStream ris;
+		
+		public InputStreamWrapper(ResettableInputStream ris) {
+			this.ris = ris;
+		}
+		
+		@Override
+		public int read() throws IOException {
+			return ris.read();
+		}
+
+		@Override
+		public int read(byte[] b, int off, int len) throws IOException {
+			return ris.read(b, off, len);
+		}
+
+
+		@Override
+		public void mark(int limit) {
+			try {
+				ris.mark();
+			} catch (IOException ex) {
+				Throwables.propagate(ex);
+			}
+		}
+
+		@Override
+		public void reset() throws IOException {
+			ris.reset();
+		}
+
+		@Override
+		public void close() throws IOException {
+			ris.close();
+		}
+
+		@Override
+		public boolean markSupported() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+				
+	}
+	
+	public static class Builder implements EventDeserializer.Builder {
+
+		@Override
+		public EventDeserializer build(Context context, final ResettableInputStream in) {
+			return new XMLEventDeserializer(new InputStreamWrapper(in));
+		}
+		
+	}
 }

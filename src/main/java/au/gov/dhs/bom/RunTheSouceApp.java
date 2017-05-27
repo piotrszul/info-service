@@ -14,13 +14,19 @@ import org.apache.flume.channel.ChannelProcessor;
 import org.apache.flume.channel.MemoryChannel;
 import org.apache.flume.channel.ReplicatingChannelSelector;
 import org.apache.flume.conf.Configurables;
+import org.apache.flume.serialization.EventDeserializerFactory;
 
 import au.gov.dhs.bom.flume.BomObservationSource;
 import au.gov.dhs.bom.flume.BomObservationSourceConstants;
+import au.gov.dhs.bom.flume.XMLEventDeserializer;
 
 public class RunTheSouceApp {
 
 	public static void main(String[] args) throws Exception {
+
+		Object o = EventDeserializerFactory.getInstance(
+				"au.gov.dhs.bom.flume.XMLEventDeserializer$Builder", null, null);
+		
 		BomObservationSource source;
 		MemoryChannel channel;
 		
