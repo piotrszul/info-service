@@ -31,20 +31,34 @@
 			<groupId>org.apache.flume</groupId>
 			<artifactId>flume-ng-core</artifactId>
 			<version>1.6.0-cdh5.11.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>provided</scope>
 		</dependency>
 		<!-- For the Twitter API -->
 		<dependency>
 			<groupId>org.twitter4j</groupId>
 			<artifactId>twitter4j-stream</artifactId>
 			<version>3.0.5</version>
+            <scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
 		<dependency>
 			<groupId>org.apache.avro</groupId>
 			<artifactId>avro</artifactId>
 			<version>1.8.2</version>
+            <scope>provided</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/com.satori/satori-rtm-sdk -->
+		<dependency>
+			<groupId>com.satori</groupId>
+			<artifactId>satori-rtm-sdk</artifactId>
+			<version>1.0.3</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<pluginManagement>
@@ -106,35 +120,51 @@
 						<artifactId>jaxb2-basics</artifactId>
 						<version>1.11.1</version>
 					</dependency>
-					<!--  dependency>
-						<groupId>org.codehaus.jackson</groupId>
-						<artifactId>jackson-mapper-asl</artifactId>
-						<version>1.9.3</version>
-					</dependency>
-					<dependency>
-						<groupId>com.sun.xml.bind</groupId>
-						<artifactId>jaxb-xjc</artifactId>
-                        <version>2.2.11</version>
- 					</dependency>
-					<dependency>
-						<groupId>com.nokia.util.avro</groupId>
-						<version>0.4-SNAPSHOT</version>
-						<artifactId>schemagen-core</artifactId>
-						<scope>system</scope>
-						<systemPath>/Users/szu004/contract/dhs/Avro-Schema-Generator/SchemaCompiler/schemagen-core/target/schemagen-core-0.4-SNAPSHOT.jar</systemPath>
-					</dependency-->
+					<!-- dependency> <groupId>org.codehaus.jackson</groupId> <artifactId>jackson-mapper-asl</artifactId> 
+						<version>1.9.3</version> </dependency> <dependency> <groupId>com.sun.xml.bind</groupId> 
+						<artifactId>jaxb-xjc</artifactId> <version>2.2.11</version> </dependency> 
+						<dependency> <groupId>com.nokia.util.avro</groupId> <version>0.4-SNAPSHOT</version> 
+						<artifactId>schemagen-core</artifactId> <scope>system</scope> <systemPath>/Users/szu004/contract/dhs/Avro-Schema-Generator/SchemaCompiler/schemagen-core/target/schemagen-core-0.4-SNAPSHOT.jar</systemPath> 
+						</dependency -->
 				</dependencies>
 			</plugin>
-			<!-- plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-shade-plugin</artifactId> 
-				<version>2.3</version> <executions> <execution> <phase>package</phase> <goals> 
-				<goal>shade</goal> </goals> </execution> </executions> <configuration> <shadedArtifactAttached>true</shadedArtifactAttached> 
-				<shadedClassifierName>all</shadedClassifierName> <filters> <filter> <artifact>*:*</artifact> 
-				<excludes> <exclude>META-INF/*.SF</exclude> <exclude>META-INF/*.DSA</exclude> 
-				<exclude>META-INF/*.RSA</exclude> </excludes> </filter> </filters> <transformers> 
-				<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" 
-				/> <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"> 
-				<mainClass>au.gov.dhs.cdcm.tools.GenerateXMLDocumentsApp</mainClass> </transformer> 
-				</transformers> </configuration> </plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<shadedArtifactAttached>true</shadedArtifactAttached>
+					<shadedClassifierName>all</shadedClassifierName>
+					<relocations>
+						<relocation>
+							<pattern>com.google.common</pattern>
+							<shadedPattern>int.com.google.commonl</shadedPattern>
+						</relocation>
+					</relocations>
+					<filters>
+						<filter>
+							<artifact>*:*</artifact>
+							<excludes>
+								<exclude>META-INF/*.SF</exclude>
+								<exclude>META-INF/*.DSA</exclude>
+								<exclude>META-INF/*.RSA</exclude>
+							</excludes>
+						</filter>
+					</filters>
+					<transformers>
+						<transformer
+							implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+					</transformers>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>

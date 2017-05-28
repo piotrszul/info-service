@@ -3,7 +3,9 @@ package au.gov.dhs.bom.flume;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -35,7 +37,7 @@ public class BomObservationSource extends AbstractSource implements EventDrivenS
 	private int batchSize = 100;
 	private URL resourceURL;
 	private long poolingIntervalInSec = 60;
-
+	
 	@Override
 	public synchronized void configure(Context context) {
 
