@@ -8,7 +8,7 @@ import org.apache.flume.Event;
 import org.apache.flume.client.avro.EventReader;
 
 public class URLEventReader implements EventReader {
-
+	
 	private final URL sourceUrl;
 	private XMLEventDeserializer deserialiser = null;
 

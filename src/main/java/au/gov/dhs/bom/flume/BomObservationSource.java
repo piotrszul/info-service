@@ -40,7 +40,7 @@ public class BomObservationSource extends AbstractSource implements EventDrivenS
 	
 	@Override
 	public synchronized void configure(Context context) {
-
+		logger.info("Resource URL: {}", context.getString(BomObservationSourceConstants.RESOURCE_URL));
 		try {
 			resourceURL = new URL(context.getString(BomObservationSourceConstants.RESOURCE_URL));
 		} catch (MalformedURLException ex) {

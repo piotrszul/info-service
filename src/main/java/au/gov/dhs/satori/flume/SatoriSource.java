@@ -59,12 +59,18 @@ import twitter4j.json.DataObjectFactory;
  */
 public class SatoriSource extends AbstractSource implements EventDrivenSource, Configurable {
 
+
 	private static final Logger logger = LoggerFactory.getLogger(SatoriSource.class);
 
-	/** Information necessary for accessing the Twitter API */
-	static final String endpoint = "wss://open-data.api.satori.com";
-	static final String appkey = "2bEEc15CC97dCAEa4AB5A8fF872F5C9D";
-	static final String channel = "RT-GTFS-Sydney-Public-Transport";
+	/** Information necessary for accessing the Satori API */
+	//private String endpoint = "wss://open-data.api.satori.com";
+	//private String appkey = "2bEEc15CC97dCAEa4AB5A8fF872F5C9D";
+	//private String channel = "RT-GTFS-Sydney-Public-Transport";
+
+	
+	private String endpoint;
+	private String appkey;
+	private String channel;
 
 	RtmClient client = null;
 
@@ -75,7 +81,11 @@ public class SatoriSource extends AbstractSource implements EventDrivenSource, C
 	 */
 	@Override
 	public void configure(Context context) {
-
+	
+		endpoint = context.getString(SatoriSourceConstants.ENDPOINT, "wss://open-data.api.satori.com");
+		appkey = context.getString(SatoriSourceConstants.APP_KEY);
+		channel = context.getString(SatoriSourceConstants.CHANNEL);
+		
 		if (client == null) {
 			client = new RtmClientBuilder(endpoint, appkey).setListener(new RtmClientAdapter() {
 				@Override

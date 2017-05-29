@@ -21,6 +21,7 @@ package com.cloudera.flume.source;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.lang.text.StrSubstitutor;
 import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.EventDrivenSource;
@@ -71,11 +72,13 @@ public class TwitterSource extends AbstractSource
    */
   @Override
   public void configure(Context context) {
-    consumerKey = context.getString(TwitterSourceConstants.CONSUMER_KEY_KEY);
-    consumerSecret = context.getString(TwitterSourceConstants.CONSUMER_SECRET_KEY);
-    accessToken = context.getString(TwitterSourceConstants.ACCESS_TOKEN_KEY);
-    accessTokenSecret = context.getString(TwitterSourceConstants.ACCESS_TOKEN_SECRET_KEY);
-
+	  
+	StrSubstitutor resolver = new StrSubstitutor(System.getenv());
+    consumerKey = resolver.replace(context.getString(TwitterSourceConstants.CONSUMER_KEY_KEY));
+    consumerSecret = resolver.replace(context.getString(TwitterSourceConstants.CONSUMER_SECRET_KEY));
+    accessToken = resolver.replace(context.getString(TwitterSourceConstants.ACCESS_TOKEN_KEY));
+    accessTokenSecret = resolver.replace(context.getString(TwitterSourceConstants.ACCESS_TOKEN_SECRET_KEY));
+    
     String keywordString = context.getString(TwitterSourceConstants.KEYWORDS_KEY, "");
     if (keywordString.trim().length() == 0) {
         keywords = new String[0];
