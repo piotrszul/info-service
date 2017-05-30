@@ -71,6 +71,7 @@ public class JsonToAvroConverter implements Interceptor, Configurable {
 				event.getHeaders().put(AVRO_SCHEMA_URL_HEADER, schemaUrl);
 			}
 		} catch (IOException ex) {
+			logger.error("Error while converting", ex);
 			Throwables.propagate(ex);
 		}
 		return null;
@@ -92,6 +93,7 @@ public class JsonToAvroConverter implements Interceptor, Configurable {
 					event.getHeaders().put(AVRO_SCHEMA_URL_HEADER, schemaUrl);
 				}
 			} catch (IOException ex) {
+				logger.error("Error while converting", ex);
 				Throwables.propagate(ex);
 			}
 		}
