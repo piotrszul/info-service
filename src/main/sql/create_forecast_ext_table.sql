@@ -1,5 +1,6 @@
-DROP TABLE IF EXISTS  forecast;
-CREATE TABLE forecast (
+ADD JAR file:///home/cloudera/dev/cdh-twitter-example/hive-serdes/target/hive-serdes-1.0-SNAPSHOT.jar;
+DROP TABLE IF EXISTS  forecast_ext;
+CREATE EXTERNAL TABLE forecast_ext (
     issue_time_utc STRING,
     area STRUCT<
         aac:STRING,
@@ -17,4 +18,5 @@ CREATE TABLE forecast (
             precis:STRING,
             probability_of_precipitation:STRING>>>
  ) 
- STORED AS PARQUET;
+ ROW FORMAT SERDE 'com.cloudera.hive.serde.JSONSerDe'
+ LOCATION '/user/cloudera/forecast';
