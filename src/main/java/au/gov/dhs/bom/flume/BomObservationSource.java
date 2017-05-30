@@ -1,9 +1,7 @@
 package au.gov.dhs.bom.flume;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -19,9 +17,8 @@ import org.apache.flume.Event;
 import org.apache.flume.EventDrivenSource;
 import org.apache.flume.client.avro.EventReader;
 import org.apache.flume.conf.Configurable;
-import org.apache.flume.event.EventBuilder;
-import org.apache.flume.source.AbstractSource;
 import org.apache.flume.instrumentation.SourceCounter;
+import org.apache.flume.source.AbstractSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,10 +37,10 @@ public class BomObservationSource extends AbstractSource implements EventDrivenS
 	private int batchSize = 100;
 	private URL resourceURL;
 	private long poolingIntervalInSec = 60;
-
+	
 	@Override
 	public synchronized void configure(Context context) {
-
+		logger.info("Resource URL: {}", context.getString(BomObservationSourceConstants.RESOURCE_URL));
 		try {
 			resourceURL = new URL(context.getString(BomObservationSourceConstants.RESOURCE_URL));
 		} catch (MalformedURLException ex) {

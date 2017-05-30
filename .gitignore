@@ -1,6 +1,9 @@
 .DS_Store
 *.bbl
 
+
+set-env.sh
+
 *.pdf
 
 doc/publications/incob2014/bmc_article.tex
