@@ -39,7 +39,6 @@
 			</exclusions>
 			<scope>provided</scope>
 		</dependency>
-		<!-- For the Twitter API -->
 		<dependency>
 			<groupId>org.twitter4j</groupId>
 			<artifactId>twitter4j-stream</artifactId>

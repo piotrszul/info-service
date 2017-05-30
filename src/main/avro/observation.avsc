@@ -1,0 +1,249 @@
+{
+  "type" : "record",
+  "name" : "observation_avro",
+  "namespace" : "default",
+  "fields" : [ {
+    "name" : "issue_time_utc",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "issue_time_local",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "station",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "record_0",
+      "namespace" : "",
+      "doc" : "struct<bom_id:string,description:string,forecast_district_id:string,lat:string,lon:string,stn_name:string,tz:string,wmo_id:string>",
+      "fields" : [ {
+        "name" : "bom_id",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "description",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "forecast_district_id",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "lat",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "lon",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "stn_name",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "tz",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wmo_id",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      } ]
+    } ],
+    "default" : null
+  }, {
+    "name" : "period",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "record_1",
+      "namespace" : "",
+      "doc" : "struct<time_utc:string,time_local:string>",
+      "fields" : [ {
+        "name" : "time_utc",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "time_local",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      } ]
+    } ],
+    "default" : null
+  }, {
+    "name" : "elements",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "record_2",
+      "namespace" : "",
+      "doc" : "struct<air_temperature:string,apparent_temp:string,cloud:string,cloud_base_m:string,cloud_oktas:string,cloud_type_id:string,delta_t:string,dew_point:string,gust_kmh:string,maximum_air_temperature:string,maximum_gust_dir:string,maximum_gust_kmh:string,maximum_gust_spd:string,minimum_air_temperature:string,msl_pres:string,pres:string,qnh_pres:string,rainfall:string,rainfall_24hr:string,rel_humidity:string,sea_height:string,swell_dir:string,swell_height:string,swell_period:string,vis_km:string,weather:string,wind_dir:string,wind_dir_deg:string,wind_gust_spd:string,wind_spd:string,wind_spd_kmh:string>",
+      "fields" : [ {
+        "name" : "air_temperature",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "apparent_temp",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "cloud",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "cloud_base_m",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "cloud_oktas",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "cloud_type_id",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "delta_t",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "dew_point",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "gust_kmh",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "maximum_air_temperature",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "maximum_gust_dir",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "maximum_gust_kmh",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "maximum_gust_spd",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "minimum_air_temperature",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "msl_pres",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "pres",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "qnh_pres",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "rainfall",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "rainfall_24hr",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "rel_humidity",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "sea_height",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "swell_dir",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "swell_height",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "swell_period",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "vis_km",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "weather",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wind_dir",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wind_dir_deg",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wind_gust_spd",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wind_spd",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      }, {
+        "name" : "wind_spd_kmh",
+        "type" : [ "null", "string" ],
+        "doc" : "string",
+        "default" : null
+      } ]
+    } ],
+    "default" : null
+  } ]
+}
