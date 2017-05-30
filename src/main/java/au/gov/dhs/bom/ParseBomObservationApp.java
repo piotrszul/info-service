@@ -61,8 +61,8 @@ public class ParseBomObservationApp {
 			jsonStation.put("stn_name", station.getStnName());
 			jsonStation.put("description", station.getDescription());
 			jsonStation.put("forecast_district_id", station.getForecastDistrictId());
-			jsonStation.put("lat", station.getLat());
-			jsonStation.put("lon", station.getLon());
+			jsonStation.put("lat", String.valueOf(station.getLat()));
+			jsonStation.put("lon", String.valueOf(station.getLon()));
 			observation.put("station", jsonStation);
 			
 			ObservationPeriodType period = station.getPeriod().get(0);
