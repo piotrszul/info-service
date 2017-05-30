@@ -1,4 +1,4 @@
-ADD JAR file:///home/cloudera/dev/cdh-twitter-example/hive-serdes/target/hive-serdes-1.0-SNAPSHOT.jar;
+ADD JAR /usr/lib/hive-hcatalog/share/hcatalog/hive-hcatalog-core-1.1.0-cdh5.8.0.jar;
 DROP TABLE IF EXISTS  forecast_ext;
 CREATE EXTERNAL TABLE forecast_ext (
     issue_time_utc STRING,
@@ -17,6 +17,6 @@ CREATE EXTERNAL TABLE forecast_ext (
             precipitation_range:STRING,
             precis:STRING,
             probability_of_precipitation:STRING>>>
- ) 
- ROW FORMAT SERDE 'com.cloudera.hive.serde.JSONSerDe'
- LOCATION '/user/cloudera/forecast';
+ )  
+ ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+ LOCATION '/user/cloudera/forecast_ext';

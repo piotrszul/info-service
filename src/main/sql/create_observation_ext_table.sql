@@ -1,4 +1,4 @@
-ADD JAR file:///home/cloudera/dev/cdh-twitter-example/hive-serdes/target/hive-serdes-1.0-SNAPSHOT.jar;
+ADD JAR /usr/lib/hive-hcatalog/share/hcatalog/hive-hcatalog-core-1.1.0-cdh5.8.0.jar;
 DROP TABLE IF EXISTS  observation_ext;
 CREATE EXTERNAL TABLE observation_ext (
     issue_time_utc STRING,
@@ -48,5 +48,5 @@ CREATE EXTERNAL TABLE observation_ext (
         wind_spd:STRING,
         wind_spd_kmh:STRING>
  ) 
- ROW FORMAT SERDE 'com.cloudera.hive.serde.JSONSerDe'
+ ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
  LOCATION '/user/cloudera/observation_ext';
