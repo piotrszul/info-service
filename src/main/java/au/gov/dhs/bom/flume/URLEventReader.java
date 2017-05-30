@@ -6,11 +6,12 @@ import java.util.List;
 
 import org.apache.flume.Event;
 import org.apache.flume.client.avro.EventReader;
+import org.apache.flume.serialization.EventDeserializer;
 
 public class URLEventReader implements EventReader {
 	
 	private final URL sourceUrl;
-	private XMLEventDeserializer deserialiser = null;
+	private EventDeserializer deserialiser = null;
 
 	public URLEventReader(URL sourceUrl) {
 		this.sourceUrl = sourceUrl;
@@ -18,7 +19,7 @@ public class URLEventReader implements EventReader {
 
 	private void ensureDeserialiser() throws IOException {
 		if (deserialiser == null) {
-			deserialiser = new XMLEventDeserializer(sourceUrl.openStream());
+			deserialiser = new JsonEventDeserialiser(sourceUrl.openStream());
 		}
 	}
 	
