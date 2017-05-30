@@ -17,7 +17,7 @@ public class QueryBOMData {
 		
 		SparkSession  spark = SparkSession.builder().appName("Query").master("local[2]").getOrCreate();
 		
-		Dataset<Row> bomFeed = spark.read().json("src/test/json/IDN11060.json").toDF();
+		Dataset<Row> bomFeed = spark.read().json("src/test/json/IDT60920.json").toDF();
 		bomFeed.printSchema();
 		
 		bomFeed.registerTempTable("forecast");
