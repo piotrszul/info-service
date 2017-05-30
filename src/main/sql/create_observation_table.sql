@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS  observation;
-CREATE TABLE observatoin(
+CREATE TABLE observation(
     issue_time_utc STRING,
     issue_time_local STRING,
     station STRUCT<
@@ -14,7 +14,7 @@ CREATE TABLE observatoin(
     period STRUCT<
         time_utc:STRING,
         time_local:STRING>,
-    elements:STRUCT<
+    elements STRUCT<
         air_temperature:STRING,
         apparent_temp:STRING,
         cloud:STRING,

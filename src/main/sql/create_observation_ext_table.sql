@@ -1,6 +1,6 @@
 ADD JAR file:///home/cloudera/dev/cdh-twitter-example/hive-serdes/target/hive-serdes-1.0-SNAPSHOT.jar;
 DROP TABLE IF EXISTS  observation_ext;
-CREATE EXTERNAL TABLE observatoin_ext (
+CREATE EXTERNAL TABLE observation_ext (
     issue_time_utc STRING,
     issue_time_local STRING,
     station STRUCT<
@@ -15,7 +15,7 @@ CREATE EXTERNAL TABLE observatoin_ext (
     period STRUCT<
         time_utc:STRING,
         time_local:STRING>,
-    elements:STRUCT<
+    elements STRUCT<
         air_temperature:STRING,
         apparent_temp:STRING,
         cloud:STRING,
