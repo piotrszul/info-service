@@ -152,4 +152,24 @@ public class JsonToAvroConverter implements Interceptor, Configurable {
 			}
 		}
 	}
+	
+	public static class Builder implements Interceptor.Builder {
+
+		private Context context;
+		
+		@Override
+		public void configure(Context context) {
+			// TODO Auto-generated method stub
+			this.context = context;
+		}
+
+		@Override
+		public Interceptor build() {
+			// TODO Auto-generated method stub
+			JsonToAvroConverter result = new JsonToAvroConverter();
+			result.configure(context);
+			return result;
+		}
+		
+	}
 }
