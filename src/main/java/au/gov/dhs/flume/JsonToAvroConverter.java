@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.Locale;
 
+import org.apache.avro.AvroRuntimeException;
 import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericDatumReader;
 import org.apache.avro.generic.GenericDatumWriter;
@@ -29,7 +30,8 @@ import org.apache.hadoop.fs.Path;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import avro.shaded.com.google.common.base.Throwables;
+import com.google.common.base.Throwables;
+
 
 public class JsonToAvroConverter implements Interceptor, Configurable {
 
@@ -53,32 +55,42 @@ public class JsonToAvroConverter implements Interceptor, Configurable {
 	@Override
 	public void initialize() {
 		// TODO Auto-generated method stub
+		logger.info("Initialize()");
 
 	}
 
 	@Override
 	public Event intercept(Event event) {
+		logger.error("intercept one - new : {}", event);
 		GenericRecord genericRecord = null;
 		BinaryEncoder binaryEncoder = null;
 		try {
 			JsonDecoder jsonEncoder = decoderFactory.jsonDecoder(schema, new ByteArrayInputStream(event.getBody()));
+			logger.info("intercept one - two : {}", event);
 			genericRecord = reader.read(genericRecord, jsonEncoder);
+			logger.info("intercept one - three : {}", event);
 			ByteArrayOutputStream binaryOutput = new ByteArrayOutputStream();
 			binaryEncoder = encoderFactory.directBinaryEncoder(binaryOutput, binaryEncoder);
 			writer.write(genericRecord, binaryEncoder);
+			logger.info("intercept one - four : {}", event);
 			event.setBody(binaryOutput.toByteArray());
 			if (addSchemaUrl) {
 				event.getHeaders().put(AVRO_SCHEMA_URL_HEADER, schemaUrl);
 			}
+			logger.info("intercept one - processed: {}", event);
+			return event;
 		} catch (IOException ex) {
 			logger.error("Error while converting", ex);
-			Throwables.propagate(ex);
+			throw Throwables.propagate(ex);
+		} catch (AvroRuntimeException ex) {
+			logger.error("Error while converting", ex);
+			throw Throwables.propagate(ex);			
 		}
-		return null;
 	}
 
 	@Override
 	public List<Event> intercept(List<Event> events) {
+		logger.info("intercept many : {}", events);
 		GenericRecord genericRecord = null;
 		BinaryEncoder binaryEncoder = null;
 		for (Event event : events) {
@@ -92,9 +104,9 @@ public class JsonToAvroConverter implements Interceptor, Configurable {
 				if (addSchemaUrl) {
 					event.getHeaders().put(AVRO_SCHEMA_URL_HEADER, schemaUrl);
 				}
-			} catch (IOException ex) {
+			} catch (Exception ex) {
 				logger.error("Error while converting", ex);
-				Throwables.propagate(ex);
+				throw Throwables.propagate(ex);
 			}
 		}
 		return events;
