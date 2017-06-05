@@ -1,0 +1,1 @@
+select issue_time_local, cast(elements.air_temperature AS float) as temp, cast(elements.pres AS float) as press from observation where station.bom_id = '086282';
