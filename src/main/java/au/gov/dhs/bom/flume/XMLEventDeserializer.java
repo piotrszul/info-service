@@ -47,7 +47,6 @@ public class XMLEventDeserializer implements EventDeserializer {
 				dbf.setCoalescing(true);
 				DocumentBuilder db = dbf.newDocumentBuilder();
 				Document doc = db.parse(reader);
-
 				Element docElement = doc.getDocumentElement();
 				// assert its product
 				Element headerElement = (Element) docElement.getElementsByTagName("amoc").item(0);
