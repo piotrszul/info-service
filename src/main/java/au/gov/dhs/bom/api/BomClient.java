@@ -86,7 +86,8 @@ public class BomClient {
 				long issuedAtTimestamp = amoc.getIssueTimeUtc().getValue().toGregorianCalendar().getTimeInMillis();
 				logger.debug("Product: {} issued at: {}", product, issuedAtTimestamp);
 				// get the last timestamp
-				long previousTimestamp = lastProductTimestamp.getOrDefault(product, 0L);
+				Long prevoiusTimestampAsLong =  lastProductTimestamp.get(product);
+				long previousTimestamp = ( prevoiusTimestampAsLong != null) ?  prevoiusTimestampAsLong : 0L; 
 				if (previousTimestamp < issuedAtTimestamp) {
 					logger.info("Passing document generated as previous timestamp: {}", previousTimestamp);
 					lastProductTimestamp.put(product, issuedAtTimestamp);
