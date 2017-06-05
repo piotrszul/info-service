@@ -30,19 +30,19 @@ public class BomProductSource extends AbstractSource implements EventDrivenSourc
 
 	private SourceCounter sourceCounter;
 	private BomClient bomClient;
-	//private EventReader reader;
+	// private EventReader reader;
 
 	// // configurable
-	private DomEventDeserializer.DomBuilder domSerialiserBuilder = new XMLDomEventDeserializer.DomBuilder();
 	private String domDeserializerType;
 	private int batchSize = 100;
 	private URL baseURL;
 	private long poolingIntervalInSec = 60;
 	List<String> products;
-	
+
 	@Override
 	public synchronized void configure(Context context) {
-		String baseUrlAsString = context.getString(BomProductSourceConstants.BASE_URL, BomProductSourceConstants.DEFAULT_BASE_URL);
+		String baseUrlAsString = context.getString(BomProductSourceConstants.BASE_URL,
+				BomProductSourceConstants.DEFAULT_BASE_URL);
 		logger.info("BASE URL: {}", baseUrlAsString);
 		try {
 			baseURL = new URL(baseUrlAsString);
@@ -53,26 +53,27 @@ public class BomProductSource extends AbstractSource implements EventDrivenSourc
 
 		domDeserializerType = context.getString(BomProductSourceConstants.DOM_DESERIALIZER,
 				BomProductSourceConstants.DEFAULT_DOM_DESERIALIZER);
-		
-		poolingIntervalInSec = context.getInteger(BomProductSourceConstants.POOLING_INTERVAL_IN_SEC, 
+
+		poolingIntervalInSec = context.getInteger(BomProductSourceConstants.POOLING_INTERVAL_IN_SEC,
 				BomObservationSourceConstants.DEF_POOLING_INTERVAL_IN_SEC);
 
 		products = new ArrayList<String>();
-		for(String productItem:context.getString(BomProductSourceConstants.PRODUCTS, "").split(",")) {
+		for (String productItem : context.getString(BomProductSourceConstants.PRODUCTS, "").split(",")) {
 			products.add(productItem.trim());
 		}
 
 		if (sourceCounter == null) {
 			sourceCounter = new SourceCounter(getName());
 		}
-		
+
 		if (bomClient == null) {
-			bomClient = new BomClient(products, poolingIntervalInSec, new BomServiceRunable(sourceCounter));
+			bomClient = new BomClient(products, poolingIntervalInSec, new BomClientListener(sourceCounter));
 		}
 	}
 
 	@Override
 	public synchronized void start() {
+		logger.debug("Starting ...");
 		super.start();
 		bomClient.start();
 		sourceCounter.start();
@@ -80,6 +81,7 @@ public class BomProductSource extends AbstractSource implements EventDrivenSourc
 
 	@Override
 	public synchronized void stop() {
+		logger.debug("Stopping ...");
 		bomClient.stop();
 		sourceCounter.stop();
 		super.stop();
@@ -91,27 +93,31 @@ public class BomProductSource extends AbstractSource implements EventDrivenSourc
 		return sourceCounter;
 	}
 
-	class BomServiceRunable implements  BomClient.Listener {
+	class BomClientListener implements BomClient.Listener {
 
 		private final SourceCounter sourceCounter;
 
-		public BomServiceRunable(SourceCounter sourceCounter) {
+		public BomClientListener(SourceCounter sourceCounter) {
 			super();
 			this.sourceCounter = sourceCounter;
 		}
-		
+
 		@Override
 		public void onMsg(Document doc, AmocType amoc) {
+			logger.debug("Reveived amoc: {}", amoc);
 			try {
-				//DomEventDeserializer domDeserializer = domSerialiserBuilder.build(null, doc);
-				
-				DomEventDeserializer domDeserializer = DomEventDeserializerFactory.newInstance(domDeserializerType, null, doc);
-				logger.debug("Deserializer: {}" , domDeserializer);
+				DomEventDeserializer domDeserializer = DomEventDeserializerFactory.newInstance(domDeserializerType,
+						null, doc);
+				logger.debug("Deserializer: {}", domDeserializer);
 				List<Event> events = domDeserializer.readEvents(batchSize);
 				while (!events.isEmpty()) {
 					sourceCounter.addToEventReceivedCount(events.size());
 					sourceCounter.incrementAppendBatchReceivedCount();
-						getChannelProcessor().processEventBatch(events);
+					logger.info("Processing batch of size {} for: {}", events.size(),
+							amoc.getIdentifier() + " - " + amoc.getIssueTimeLocal());
+					getChannelProcessor().processEventBatch(events);
+					logger.info("Done with batch of size {} for: {}", events.size(),
+							amoc.getIdentifier() + " - " + amoc.getIssueTimeLocal());
 					sourceCounter.addToEventAcceptedCount(events.size());
 					sourceCounter.incrementAppendBatchAcceptedCount();
 					events = domDeserializer.readEvents(batchSize);

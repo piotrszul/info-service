@@ -1,5 +1,6 @@
 package au.gov.dhs.bom.api;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -14,15 +15,18 @@ import java.util.concurrent.TimeUnit;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.xml.sax.SAXException;
 
 import generated.AmocType;
 import generated.ProductType;
@@ -62,9 +66,16 @@ public class BomClient {
 			this.url = url;
 		}
 
-
 		@Override
 		public void run() {
+			try {
+				doRun();
+			} catch (Throwable ex) {
+				logger.warn("An unexpected exception while retrieving bom document. Will ignore and try again when sheduled", ex);
+			}
+		}
+		
+		public void doRun() {
 			InputStream in = null;
 			try {
 				logger.info("Connecting to: " + url);
@@ -91,14 +102,11 @@ public class BomClient {
 				if (previousTimestamp < issuedAtTimestamp) {
 					logger.info("Passing document generated as previous timestamp: {}", previousTimestamp);
 					lastProductTimestamp.put(product, issuedAtTimestamp);
-					
-					
-					
 					listener.onMsg(doc, amoc);
 				} else {
 					logger.debug("Skipping document issued at: {}  as last timestamp {}",issuedAtTimestamp,previousTimestamp);
 				}				
-			} catch (Exception ex) {
+			} catch (IOException | ParserConfigurationException | SAXException | JAXBException ex) {
 				logger.error("Error while retrieving product", ex);
 				throw new RuntimeException(ex);
 			} finally {
@@ -108,7 +116,7 @@ public class BomClient {
 	}
 	
 	public void start() {
-		logger.debug("Starting BomClient for url: " + products);
+		logger.debug("Starting BomClient for products: " + products);
 		executor = Executors.newSingleThreadScheduledExecutor();
 		URL baseUrl;
 		try {
@@ -124,6 +132,7 @@ public class BomClient {
 	}
 	
 	public void stop() {
+		logger.debug("Stopping BomClient for products: " + products);
 		executor.shutdown();
 		//executor.awaitTermination(timeout, unit)
 	}
