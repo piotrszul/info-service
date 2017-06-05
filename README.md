@@ -3,6 +3,7 @@
 
 BOM Resources:
 
+http://www.bom.gov.au/catalogue/data-feeds.shtml#product
 
 http://www.bom.gov.au/catalogue/anon-ftp.shtml
 
