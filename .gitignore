@@ -47,3 +47,5 @@ target
 .RData 
 .Rhistory 
 tmp
+nohup.out
+
