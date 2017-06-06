@@ -80,6 +80,11 @@
         <dependency>
             <groupId>org.kitesdk</groupId>
             <artifactId>kite-morphlines-core</artifactId>
+            <scope>provided</scope>
+            <version>1.0.0</version> <!-- or whatever the latest version is -->
+        </dependency>        <dependency>
+            <groupId>org.kitesdk</groupId>
+            <artifactId>kite-morphlines-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
             <version>1.0.0</version> <!-- or whatever the latest version is -->
@@ -91,6 +96,12 @@
 			<version>1.0.0</version> <!-- or whatever the latest version is -->
             <type>pom</type>
 		</dependency>
+		<dependency>
+		    <groupId>com.github.wnameless</groupId>
+		    <artifactId>json-flattener</artifactId>
+		    <version>0.4.0</version>
+            <scope>test</scope>
+		</dependency>		
 	</dependencies>
 	<build>
 		<pluginManagement>

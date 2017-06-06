@@ -1,3 +1,4 @@
+package uk.gov.hmrc.flume;
 
 
 import com.google.common.collect.ImmutableMap;
