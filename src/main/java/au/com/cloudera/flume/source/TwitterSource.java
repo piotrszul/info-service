@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.cloudera.flume.source;
+package au.com.cloudera.flume.source;
 
 import java.util.HashMap;
 import java.util.Map;

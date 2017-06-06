@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.cloudera.flume.source;
+package au.com.cloudera.flume.source;
 
 public class TwitterSourceConstants {
 
