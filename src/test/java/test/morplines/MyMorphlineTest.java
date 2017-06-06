@@ -24,7 +24,7 @@ public class MyMorphlineTest extends AbstractMorphlineTest {
 	    startSession();
 	    morphline.process(record);
 	    System.out.println(collector.getFirstRecord().getFirstValue(Fields.ATTACHMENT_MIME_TYPE));
-	    System.out.println(collector.getFirstRecord().getFirstValue(Fields.ATTACHMENT_BODY));
+	    System.out.println(new String((byte[])collector.getFirstRecord().getFirstValue(Fields.ATTACHMENT_BODY)));
 	  }
 
 }
