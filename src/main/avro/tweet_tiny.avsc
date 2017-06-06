@@ -1,0 +1,73 @@
+{
+  "type" : "record",
+  "name" : "doc",
+  "doc" : "adoc",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "string"
+  }, {
+    "name" : "user_friends_count",
+    "default": null,
+    "type" : [ "null","int" ]
+  }, {
+    "name" : "user_location",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "user_description",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "user_statuses_count",
+    "default": null,
+    "type" : [ "null","int" ]
+  }, {
+    "name" : "user_followers_count",
+    "default": null,
+    "type" : [ "null","int" ]
+  }, {
+    "name" : "user_name",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "user_screen_name",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "created_at",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "text",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "retweet_count",
+    "default": null,
+    "type" : [ "null","int" ]
+  }, {
+    "name" : "retweeted",
+    "default": null,
+    "type" : [ "null" , "boolean" ]
+  }, {
+    "name" : "in_reply_to_user_id",
+    "default": null,
+    "type" : [ "null" , "long" ]
+  }, {
+    "name" : "source",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "in_reply_to_status_id",
+    "default": null,
+    "type" : [ "null" , "long" ]
+  }, {
+    "name" : "media_url_https",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  }, {
+    "name" : "expanded_url",
+    "default": null,
+    "type" : [ "null" , "string" ]
+  } ]
+}
