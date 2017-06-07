@@ -5,6 +5,7 @@ import java.util.Map.Entry;
 import org.kitesdk.morphline.api.Record;
 import org.kitesdk.morphline.base.Fields;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Charsets;
 
@@ -13,30 +14,56 @@ import twitter4j.internal.org.json.JSONException;
 import twitter4j.internal.org.json.JSONObject;
 
 public class Morphlines {
-	
-	private final static NLPSentimentAnalysis SENTIMENT_ANALYZER = new NLPSentimentAnalysis();
-	
-	public static void toJson(Record record, Logger logger) {
-        JSONObject json = new JSONObject();
-        for (Entry<String, Object> field:record.getFields().entries()) {
-             try {
-				json.put(field.getKey(), field.getValue());
-			} catch (JSONException ex) {
-				// cannot add field
-				logger.warn("Cannot include field: " + field.getKey(), ex);
-			}
-        }
-        record.put(Fields.ATTACHMENT_BODY, json.toString().getBytes(Charsets.UTF_8));
-        record.put(Fields.ATTACHMENT_MIME_TYPE, "application/json");
-        record.put(Fields.ATTACHMENT_CHARSET, Charsets.UTF_8.name());
+
+	private final static Logger LOGGER = LoggerFactory.getLogger(Morphlines.class);
+
+	private static NLPSentimentAnalysis sentimentAnalyser = null;
+	static {
+		try {
+			LOGGER.info("Cladd loader: " + NLPSentimentAnalysis.class.getClassLoader());
+			sentimentAnalyser = new NLPSentimentAnalysis();
+
+			LOGGER.info("NLPSentimentAnalysis ready");
+		} catch (Throwable ex) {
+			LOGGER.warn("Error while initializing NLPSentimentAnalysis. Will be disabled", ex);
+		}
 	}
 
+	public static void toJson(Record record, Logger logger) {
+		try {
+			LOGGER.info("Converting to JSON:" + record);
+			JSONObject json = new JSONObject();
+			for (Entry<String, Object> field : record.getFields().entries()) {
+				try {
+					json.put(field.getKey(), field.getValue());
+				} catch (JSONException ex) {
+					// cannot add field
+					logger.warn("Cannot include field: " + field.getKey(), ex);
+				}
+			}
+			record.put(Fields.ATTACHMENT_BODY, json.toString().getBytes(Charsets.UTF_8));
+			record.put(Fields.ATTACHMENT_MIME_TYPE, "application/json");
+			record.put(Fields.ATTACHMENT_CHARSET, Charsets.UTF_8.name());
+			LOGGER.info("Converted:" + record);
+		} catch (Throwable ex) {
+			LOGGER.warn("Exception converting to JSON. Not added", ex);
+		}
+	}
 
 	public static void addSentiment(Record record, String textField, Logger logger) {
-		
-		Object obj = record.getFirstValue(textField);
-		String text = obj != null ? obj.toString() : null;
-		logger.info("Analyzig setiment for : " + text);
-		record.put("sentiment",SENTIMENT_ANALYZER.findSentiment(text));
-	}	
+		if (sentimentAnalyser != null) {
+
+			try {
+				Object obj = record.getFirstValue(textField);
+				String text = obj != null ? obj.toString() : null;
+				int sentment = sentimentAnalyser.findSentiment(text);
+				logger.info("Analyzig setiment for : " + text + " is: " + sentment);
+				record.put("sentiment", sentment);
+			} catch (Throwable ex) {
+				LOGGER.warn("Exception while analyzing sentiment. Not added", ex);
+			}
+		} else {
+			LOGGER.info("Sentiment analysis disabled noop");
+		}
+	}
 }

@@ -24,7 +24,7 @@ public class MyMorphlineTest extends AbstractMorphlineTest {
 		  
 	    morphline = createMorphline("test-morphlines/myMorphline");    
 	    Record record = new Record();    
-	    record.put(Fields.ATTACHMENT_BODY, Files.toByteArray(new File("src/test/json/tweet.json")));
+	    record.put(Fields.ATTACHMENT_BODY, Files.toByteArray(new File("src/test/json/tweet2.json")));
 	    startSession();
 	    morphline.process(record);
 	    System.out.println(collector.getFirstRecord().getFirstValue(Fields.ATTACHMENT_MIME_TYPE));

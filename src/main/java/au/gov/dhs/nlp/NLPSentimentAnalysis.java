@@ -1,5 +1,7 @@
 package au.gov.dhs.nlp;
 
+import org.kitesdk.morphline.api.Record;
+
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -13,8 +15,12 @@ public class NLPSentimentAnalysis {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Record x = new org.kitesdk.morphline.api.Record();
+		System.out.println(x.getFields());
+		
+		
 		NLPSentimentAnalysis  analysis = new NLPSentimentAnalysis();
-		int result = analysis.findSentiment("Sad and terrible. Awesome");
+		int result = analysis.findSentiment("機能が強化され マックでも使える自動面付けツール　なんと今だけ");
 		System.out.println("Sentiment: " + result);
 	}
 	

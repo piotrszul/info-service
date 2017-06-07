@@ -29,14 +29,15 @@
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>org.apache.flume</groupId>
+            <version>1.6.0-cdh5.11.0</version>
 			<artifactId>flume-ng-core</artifactId>
-			<version>1.6.0-cdh5.11.0</version>
-			<exclusions>
+			<!--  version>1.7.0</version-->
+			<!-- exclusions>
 				<exclusion>
 					<groupId>com.google.guava</groupId>
 					<artifactId>guava</artifactId>
 				</exclusion>
-			</exclusions>
+			</exclusions-->
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -57,6 +58,7 @@
 			<groupId>com.satori</groupId>
 			<artifactId>satori-rtm-sdk</artifactId>
 			<version>1.0.3</version>
+			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
 		<dependency>
@@ -82,20 +84,26 @@
             <artifactId>kite-morphlines-core</artifactId>
             <scope>provided</scope>
             <version>1.0.0</version> <!-- or whatever the latest version is -->
-        </dependency>        <dependency>
+        </dependency>        
+        <dependency>
             <groupId>org.kitesdk</groupId>
             <artifactId>kite-morphlines-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
             <version>1.0.0</version> <!-- or whatever the latest version is -->
-        </dependency>
-		<dependency>
-			<groupId>org.kitesdk</groupId>
-			<artifactId>kite-morphlines-all</artifactId>
-			<scope>test</scope>
-			<version>1.0.0</version> <!-- or whatever the latest version is -->
-            <type>pom</type>
-		</dependency>
+        </dependency>        
+        <dependency>
+            <groupId>org.kitesdk</groupId>
+            <artifactId>kite-morphlines-json</artifactId>
+            <scope>test</scope>
+            <version>1.0.0</version> <!-- or whatever the latest version is -->
+        </dependency>        
+        <dependency>
+            <groupId>org.kitesdk</groupId>
+            <artifactId>kite-morphlines-avro</artifactId>
+            <scope>test</scope>
+            <version>1.0.0</version> <!-- or whatever the latest version is -->
+        </dependency>        
 		<dependency>
 		    <groupId>com.github.wnameless</groupId>
 		    <artifactId>json-flattener</artifactId>
@@ -113,10 +121,8 @@
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-corenlp</artifactId>
             <classifier>models-english</classifier>
-            <scope>provided</scope>
             <version>3.7.0</version>
         </dependency>				
-		
 	</dependencies>
 	<build>
 		<pluginManagement>
@@ -206,12 +212,17 @@
 				<configuration>
 					<shadedArtifactAttached>true</shadedArtifactAttached>
 					<shadedClassifierName>all</shadedClassifierName>
-					<relocations>
+		            <artifactSet>
+		                <excludes>
+		                  <exclude>edu.stanford.nlp:stanford-corenlp:models-english</exclude>
+		                </excludes>
+		              </artifactSet>					
+					<!-- relocations>
 						<relocation>
 							<pattern>com.google.common</pattern>
 							<shadedPattern>int.com.google.commonl</shadedPattern>
 						</relocation>
-					</relocations>
+					</relocations-->
 					<filters>
 						<filter>
 							<artifact>*:*</artifact>

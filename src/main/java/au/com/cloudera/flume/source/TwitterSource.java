@@ -39,7 +39,6 @@ import twitter4j.StatusDeletionNotice;
 import twitter4j.StatusListener;
 import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
-import twitter4j.auth.AccessToken;
 import twitter4j.conf.ConfigurationBuilder;
 import twitter4j.json.DataObjectFactory;
 
@@ -106,6 +105,7 @@ public class TwitterSource extends AbstractSource
    */
   @Override
   public void start() {
+	  
     // The channel is the piece of Flume that sits between the Source and Sink,
     // and is used to process events.
     final ChannelProcessor channel = getChannelProcessor();

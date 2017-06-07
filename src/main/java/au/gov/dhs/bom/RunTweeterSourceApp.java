@@ -13,16 +13,16 @@ import org.apache.flume.channel.MemoryChannel;
 import org.apache.flume.channel.ReplicatingChannelSelector;
 import org.apache.flume.conf.Configurables;
 
-import au.gov.dhs.satori.flume.SatoriSource;
+import au.com.cloudera.flume.source.TwitterSource;
 
 public class RunTweeterSourceApp {
 
 	public static void main(String[] args) throws Exception {
 
-		SatoriSource source;
+		TwitterSource source;
 		MemoryChannel channel;
 
-		source = new SatoriSource();
+		source = new TwitterSource();
 		channel = new MemoryChannel();
 		Configurables.configure(channel, new Context());
 
@@ -35,6 +35,12 @@ public class RunTweeterSourceApp {
 		source.setChannelProcessor(new ChannelProcessor(rcs));
 
 		Context context = new Context();
+		context.put("consumerKey", "uolKIPc83edYjlAeE0QiJjsdx");
+		context.put("consumerSecret", "SSoC4i6WLZLwh9vQubIkMESJN36yAzRqmGlv3vcDdVsRdyTSO4");
+		context.put("accessToken", "764727998-7nnqWp8vff6hhQT7V6IvklWVrKLVT8rPojQGAvnZ");
+		context.put("accessTokenSecret", "wLzUFsNsjK6euuUTiYv4wLXELaZLzaya3EcvO9AxaIsC4");
+		context.put("keywords", "tutorials point,java, bigdata, mapreduce, mahout, hbase, nosql");
+		
 		Configurables.configure(source, context);
 		source.start();
 
