@@ -1,22 +1,11 @@
 package uk.gov.hmrc.flume;
 
-import com.google.common.collect.ImmutableMap;
-
-import org.apache.commons.lang.text.StrSubstitutor;
-import org.apache.flume.*;
-import org.apache.flume.conf.Configurable;
-import org.apache.flume.instrumentation.SinkCounter;
-import org.apache.flume.sink.AbstractSink;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,6 +15,21 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+import javax.xml.bind.DatatypeConverter;
+
+import org.apache.commons.lang.text.StrSubstitutor;
+import org.apache.flume.Channel;
+import org.apache.flume.Context;
+import org.apache.flume.Event;
+import org.apache.flume.EventDeliveryException;
+import org.apache.flume.Transaction;
+import org.apache.flume.conf.Configurable;
+import org.apache.flume.instrumentation.SinkCounter;
+import org.apache.flume.sink.AbstractSink;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.common.collect.ImmutableMap;
 
 /**
  * HTTP Sink Implementation for Apache Flume.
@@ -347,8 +351,7 @@ public class HttpSink extends AbstractSink implements Configurable {
 		connection.setRequestProperty("Content-Type", contentTypeHeader);
 		connection.setRequestProperty("Accept", acceptHeader);
 		if (username != null) {
-			String encoded = Base64.getEncoder()
-					.encodeToString((username + ":" + password).getBytes(StandardCharsets.UTF_8));
+			String encoded = DatatypeConverter.printBase64Binary((username + ":" + password).getBytes(StandardCharsets.UTF_8));
 			connection.setRequestProperty("Authorization", "Basic " + encoded);
 		}
 		connection.setConnectTimeout(connectTimeout);
