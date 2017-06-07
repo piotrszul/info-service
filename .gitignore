@@ -48,4 +48,5 @@ target
 .Rhistory 
 tmp
 nohup.out
+libs
 
