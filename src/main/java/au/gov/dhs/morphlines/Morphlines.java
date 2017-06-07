@@ -31,7 +31,6 @@ public class Morphlines {
 
 	public static void toJson(Record record, Logger logger) {
 		try {
-			LOGGER.info("Converting to JSON:" + record);
 			JSONObject json = new JSONObject();
 			for (Entry<String, Object> field : record.getFields().entries()) {
 				try {
@@ -44,7 +43,6 @@ public class Morphlines {
 			record.put(Fields.ATTACHMENT_BODY, json.toString().getBytes(Charsets.UTF_8));
 			record.put(Fields.ATTACHMENT_MIME_TYPE, "application/json");
 			record.put(Fields.ATTACHMENT_CHARSET, Charsets.UTF_8.name());
-			LOGGER.info("Converted:" + record);
 		} catch (Throwable ex) {
 			LOGGER.warn("Exception converting to JSON. Not added", ex);
 		}
@@ -57,8 +55,8 @@ public class Morphlines {
 				Object obj = record.getFirstValue(textField);
 				String text = obj != null ? obj.toString() : null;
 				int sentment = sentimentAnalyser.findSentiment(text);
-				logger.info("Analyzig setiment for : " + text + " is: " + sentment);
 				record.put("sentiment", sentment);
+				record.put("sentiment_code", String.valueOf(sentment));
 			} catch (Throwable ex) {
 				LOGGER.warn("Exception while analyzing sentiment. Not added", ex);
 			}

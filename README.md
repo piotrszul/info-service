@@ -1,4 +1,9 @@
 
+## Setup
+
+
+Download: https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-models-english.jar  to 'libs'
+
 
 
 BOM Resources:
