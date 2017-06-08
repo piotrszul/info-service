@@ -95,7 +95,6 @@ public class TwitterSource extends AbstractSource
     cb.setOAuthAccessTokenSecret(accessTokenSecret);
     cb.setJSONStoreEnabled(true);
     cb.setIncludeEntitiesEnabled(true);
-
     twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
   }
 
